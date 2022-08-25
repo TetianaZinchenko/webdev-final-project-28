@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,19 +7,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Kalam&family=Roboto:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./sass/index.scss" />
     <script type="module" src="./index.js"></script>
   </head>
   <body>
-    <include src="./partials/header.html"></include>
-    <include src="./partials/hero.html"></include>
-    <include src="./partials/offerings.html"></include>
-    <include src="./partials/favorites.html"></include>
-    <include src="./partials/customers-say.html"></include>
-    <include src="./partials/subscribe.html"></include>
-    <include src="./partials/footer.html"></include>
+    <header>
+      <include src="./partials/header.html"></include>
+    </header>
+    <main>
+      <include src="./partials/hero.html"></include>
+      <include src="./partials/offerings.html"></include>
+      <include src="./partials/favorites.html"></include>
+      <include src="./partials/customers-say.html"></include>
+      <include src="./partials/subscribe.html"></include>
+    </main>
+    <footer>
+      <include src="./partials/footer.html"></include>
+    </footer>
   </body>
 </html>
