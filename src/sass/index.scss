@@ -2,9 +2,11 @@
 
 @import './utils/variables';
 @import './utils/visually-hidden';
+@import './utils/placeholders';
 
 @import './base/main';
 @import './base/reset';
+@import './base/container';
 
 @import './layout/header';
 @import './layout/hero';
@@ -13,3 +15,6 @@
 @import './layout/customers-say';
 @import './layout/subscribe';
 @import './layout/footer';
+
+@import './components/logo';
+@import './components/mobile-menu';

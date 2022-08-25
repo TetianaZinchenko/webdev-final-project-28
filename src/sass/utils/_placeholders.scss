@@ -1,0 +1,31 @@
+%button {
+  border-radius: 30px;
+
+  border: none;
+
+  cursor: pointer;
+
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+
+  color: $primaryTextColor;
+}
+
+%list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+%link {
+  text-decoration: none;
+  color: inherit;
+}
+
+%img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
