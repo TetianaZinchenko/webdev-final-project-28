@@ -1,12 +1,42 @@
+.mobile-menu__button-container {
+  position: relative;
+
+  width: 28px;
+  height: 28px;
+
+  display: flex;
+  // display: block;
+
+  justify-content: flex-end;
+
+  // margin: 0;
+  // padding: 0;
+  // align-items: center;
+  // justify-content: end;
+
+  // padding-top: 22px;
+  // padding-bottom: 22px;
+}
+
 .mobile-menu__button {
   position: absolute;
-  // z-index: 999;
-  top: 10px;
-  right: 15px;
 
-  display: inline-flex;
+  // z-index: 999;
+  // top: 22px;
+  // right: 15px;
+
+  // width: 28px;
+  // height: 28px;
+
+  // display: inline-flex;
+  // display: flex;
+  // align-items: center;
+
   margin: 0;
   padding: 0;
+  // padding-top: 22px;
+  // padding-bottom: 22px;
+
   border: none;
   background-color: transparent;
   // fill: $footerLinkColor;
@@ -21,15 +51,12 @@
 .mobile-menu {
   position: absolute;
 
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  padding: 48px 83px 48px 40px;
+  top: 50px;
+  right: 20px;
 
   display: none;
 
-  z-index: 999;
+  // z-index: 999;
 
   transform: translateX(100%);
   transition: transform $timingFunction;
@@ -41,6 +68,11 @@
     &.is-open {
       display: flex;
       flex-direction: column;
+      width: 130px;
+      height: 255px;
+      box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
+      border-radius: 30px 0px 30px 30px;
+      // padding: 16px;
 
       transform: translateX(0);
     }
@@ -63,17 +95,26 @@
   font-size: 16px;
   line-height: calc(19 / 16);
 
+  // margin: 16px;
+
   color: $mobileMenuColor;
 
-  &:not(:last-child) {
-    margin-bottom: 32x;
-  }
+  // &:not(:last-child) {
+  //   margin-bottom: 32px;
+  // }
+}
+
+.mobile-menu-nav__item--current {
+  background-color: $btnBgColor;
 }
 
 .mobile-menu-nav__link {
   @extend %link;
+
+  display: inline-block;
+  margin: 16px;
 }
 
-.mobile-menu-nav__link--current {
-  color: $btnBgColor;
-}
+// .mobile-menu-nav__link--current {
+//   background-color: $btnBgColor;
+// }

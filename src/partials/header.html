@@ -7,31 +7,13 @@
     </a>
   </div>
   <!-- Mobile menu -->
-  <button
-    type="button"
-    class="mobile-menu__button js-open-menu"
-    aria-expanded="false"
-    aria-controls="mobile-menu"
-  >
-    <svg
-      class="mobile-menu__icon"
-      width="28"
-      height="28"
-      aria-label="Переключатель мобильного меню"
-    >
-      <use
-        class="mobile-menu__icon--menu"
-        href="./images/icons.svg#gg_menu"
-      ></use>
-    </svg>
-  </button>
-  <div class="mobile-menu js-menu-container" id="mobile-menu">
-    <!-- class="mobile-menu is-open" -->
+  <div class="mobile-menu__button-container">
     <button
       type="button"
-      class="mobile-menu__button js-close-menu"
+      class="mobile-menu__button"
       aria-expanded="false"
       aria-controls="mobile-menu"
+      data-menu-button
     >
       <svg
         class="mobile-menu__icon"
@@ -40,14 +22,16 @@
         aria-label="Переключатель мобильного меню"
       >
         <use
-          class="mobile-menu__icon--close"
+          class="mobile-menu__icon--menu"
           href="./images/icons.svg#gg_menu"
         ></use>
       </svg>
     </button>
+  </div>
+  <div class="mobile-menu" id="mobile-menu" data-menu>
     <!-- <mobile-menu-nav> -->
     <ul class="mobile-menu-nav">
-      <li class="mobile-menu-nav__item">
+      <li class="mobile-menu-nav__item mobile-menu-nav__item--current">
         <a
           class="mobile-menu-nav__link mobile-menu-nav__link--current"
           href="./index.html"
@@ -65,9 +49,6 @@
       </li>
       <li class="mobile-menu-nav__item">
         <a class="mobile-menu-nav__link" href="">Contact</a>
-      </li>
-      <li class="mobile-menu-nav__item">
-        <a class="mobile-menu-nav__link" href="">Order Now</a>
       </li>
     </ul>
   </div>

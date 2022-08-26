@@ -1,17 +1,23 @@
 .header__container {
   height: 72px;
 
-  @media screen and (min-width: $tablet) {
-    align-items: center;
+  align-items: center;
 
-    display: flex;
+  display: flex;
 
-    justify-content: space-between;
-  }
+  justify-content: space-between;
 
-  @media screen and (max-width: calc($desktop - 1px)) {
-    // position: relative;
-  }
+  //   @media screen and (min-width: $tablet) {
+  //     align-items: center;
+
+  //     display: flex;
+
+  //     justify-content: space-between;
+  //   }
+
+  //   @media screen and (max-width: calc($desktop - 1px)) {
+  //     position: relative;
+  //   }
 }
 
 .header-nav {
