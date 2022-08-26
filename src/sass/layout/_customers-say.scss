@@ -6,7 +6,12 @@
             padding-bottom: 60px;
             margin-left: auto;
             margin-right: auto;
-       
+       background-image: url(../images/customers-say/customers-backround-sm@1x.png);
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url(../images/customers-say/customers-backround-sm@2x.png);
     background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -112,11 +117,18 @@ font-family: 'Roboto';
         color: #2C2C2C;
         margin-bottom: 2px;
 }
-.user__category{
+
+
+
+.user__category {
     font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 1.5;
-        color: #2C2C2C;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #2C2C2C;
 }
+
+
+
+
