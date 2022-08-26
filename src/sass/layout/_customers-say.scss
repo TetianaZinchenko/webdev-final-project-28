@@ -1,4 +1,14 @@
-
+.customers{
+    background-image: url(../images/customers-say/customers-backround-sm@1x.png);
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url(../images/customers-say/customers-backround-sm@2x.png);
+    background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;} 
+}
 .customers__container{ 
             padding-left: 20px;
             padding-right: 20px;
@@ -6,15 +16,7 @@
             padding-bottom: 60px;
             margin-left: auto;
             margin-right: auto;
-       background-image: url(../images/customers-say/customers-backround-sm@1x.png);
-    @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                url(../images/customers-say/customers-backround-sm@2x.png);
-    background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
+      
             @media screen and (min-width:480px) {
                 width: 480px;
             }
@@ -118,8 +120,6 @@ font-family: 'Roboto';
         margin-bottom: 2px;
 }
 
-
-
 .user__category {
     font-family: 'Roboto';
     font-style: normal;
@@ -128,7 +128,4 @@ font-family: 'Roboto';
     line-height: 1.5;
     color: #2C2C2C;
 }
-
-
-
 
