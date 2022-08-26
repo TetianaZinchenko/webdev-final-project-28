@@ -1,8 +1,5 @@
 .mobile-menu__button-container {
-  // position: relative;
   position: absolute;
-
-  // margin-right: 0;
 
   width: 28px;
   height: 28px;
@@ -11,42 +8,15 @@
 
   top: 22px;
   right: 20px;
-
-  // display: block;
-
-  // justify-content: flex-end;
-
-  // margin: 0;
-  // padding: 0;
-  // align-items: center;
-  // justify-content: end;
-
-  // padding-top: 22px;
-  // padding-bottom: 22px;
 }
 
 .mobile-menu__button {
-  // position: absolute;
-
-  // z-index: 999;
-  // top: 22px;
-  // right: 15px;
-
-  // width: 28px;
-  // height: 28px;
-
-  // display: inline-flex;
-  // display: flex;
-  // align-items: center;
-
   margin: 0;
   padding: 0;
-  // padding-top: 22px;
-  // padding-bottom: 22px;
 
   border: none;
   background-color: transparent;
-  // fill: $footerLinkColor;
+
   fill: $footerLinkColor;
   cursor: pointer;
 
@@ -63,29 +33,22 @@
 
   display: none;
 
-  // overflow: auto;
-  // z-index: 999;
-
   transform: translateX(100%);
   transition: transform $timingFunction;
 
   background-color: $primaryBgColor;
   overflow-y: scroll;
 
-  // overflow: hidden;
-
   @media screen and (max-width: calc($tablet - 1px)) {
     &.is-open {
       display: flex;
       flex-direction: column;
       width: 130px;
-      // height: 255px;
+
       box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
       border-radius: 30px 0px 30px 30px;
 
       transform: translateX(0);
-
-      // overflow: hidden;
     }
   }
 }
@@ -97,8 +60,6 @@
 
 .mobile-menu-nav {
   @extend %list;
-
-  // margin-bottom: 60px;
 }
 
 .mobile-menu-nav__item {

@@ -65,7 +65,91 @@
           <a class="nav__link" href="">Contact</a>
         </li>
       </ul>
-      <button class="nav__button" type="button">Order Now</button>
+      <button class="nav__button" type="button" data-modal-open>
+        Order Now
+      </button>
     </nav>
+  </div>
+</div>
+
+<!-- Modal form -->
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button class="modal__btn-close" data-modal-close type="button">
+      <svg class="modal__icon-close" width="18" height="18">
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <form name="form">
+      <h2 class="form__title">
+        Leave your information and we'll call you back
+      </h2>
+      <label class="form__label" for="name"
+        ><span class="form__label-title">Name</span></label
+      >
+      <div class="form__group">
+        <input class="form__input" type="text" name="name" id="name" required />
+        <svg class="form__icon" width="18" height="18">
+          <use href="./images/icons.svg#icon-person"></use>
+        </svg>
+      </div>
+      <label class="form__label" for="tel"
+        ><span class="form__label-title">Telephone</span></label
+      >
+      <div class="form__group">
+        <input class="form__input" type="tel" name="tel" id="tel" required />
+        <svg class="form__icon" width="18" height="18">
+          <use href="./images/icons.svg#icon-phone"></use>
+        </svg>
+      </div>
+      <label class="form__label" for="e-mail"
+        ><span class="form__label-title">E-mail</span></label
+      >
+      <div class="form__group">
+        <input
+          class="form__input"
+          type="email"
+          name="e-mail"
+          id="e-mail"
+          required
+        />
+        <svg class="form__icon" width="18" height="18">
+          <use href="./images/icons.svg#icon-email"></use>
+        </svg>
+      </div>
+      <label class="form__label" for="comments"
+        ><span class="form__label-title">Comments</span></label
+      >
+      <textarea
+        class="form__comments"
+        name="comments"
+        id="comments"
+        placeholder="Enter the text"
+      ></textarea>
+      <div class="form__checkbox">
+        <label class="form__checkbox-label">
+          <input
+            class="form__checkbox-input"
+            type="checkbox"
+            name="agreement"
+            id="policy"
+            required
+          />
+          <span class="custom-checkbox"></span>
+          <span class="form__checkbox-text"
+            >I agree with the newsletter and accept the
+            <a
+              class="form__checkbox-link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Terms and Conditions</a
+            ></span
+          >
+        </label>
+      </div>
+      <button class="modal__button" type="submit">Send</button>
+    </form>
   </div>
 </div>
