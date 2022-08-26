@@ -10,6 +10,11 @@ ul {
   padding: 0;
 }
 
+body {
+  margin: 0;
+  user-select: none;
+}
+
 input,
 textarea {
   outline: transparent;

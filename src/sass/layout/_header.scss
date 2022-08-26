@@ -1,0 +1,105 @@
+.header__container {
+  height: 72px;
+
+  align-items: center;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  background-color: $headerBgColor;
+  box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
+
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.header__logo {
+  width: 66px;
+  height: 52px;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  display: flex;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+}
+
+.nav {
+  @media screen and (max-width: calc($tablet - 1px)) {
+    display: none;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+
+    align-items: baseline;
+  }
+}
+
+.nav__list {
+  @extend %list;
+
+  flex-wrap: wrap;
+
+  gap: $indent-one;
+
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav__item {
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
+
+.nav__link {
+  @extend %link;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+
+  color: $mobileMenuColor;
+
+  transition: color $timingFunction;
+
+  @media screen and (min-width: $desktop) {
+    color: $primaryTextColor;
+  }
+
+  &:hover,
+  &:focus {
+    color: $btnBgColor;
+  }
+
+  &--current {
+    color: $btnBgColor;
+
+    text-decoration-line: underline;
+  }
+}
+
+.nav__button {
+  @extend %button;
+
+  margin: 5px 17px 6px 16px;
+
+  font-weight: 500;
+  font-size: 13px;
+
+  background-color: $btnBgColor;
+
+  transition: background-color $timingFunction;
+
+  &:hover,
+  &:focus {
+    background-color: $btnBgAccentColor;
+  }
+}
