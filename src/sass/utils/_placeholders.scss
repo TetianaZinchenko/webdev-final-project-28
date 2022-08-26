@@ -1,0 +1,33 @@
+%button {
+  min-width: 100px;
+  min-height: 32px;
+
+  border-radius: 30px;
+
+  border: none;
+
+  cursor: pointer;
+
+  font-family: inherit;
+  line-height: 150%;
+  text-align: center;
+
+  color: $primaryTextColor;
+}
+
+%list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+%link {
+  text-decoration: none;
+  color: inherit;
+}
+
+%img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

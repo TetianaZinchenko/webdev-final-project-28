@@ -2,6 +2,7 @@
 
 @import './utils/variables';
 @import './utils/visually-hidden';
+@import './utils/placeholders';
 
 @import './base/main';
 @import './base/reset';
@@ -14,3 +15,6 @@
 @import './layout/customers-say';
 @import './layout/subscribe';
 @import './layout/footer';
+
+@import './components/mobile-menu';
+@import './components/modal-form';
