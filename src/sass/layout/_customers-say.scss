@@ -7,7 +7,6 @@
             margin-left: auto;
             margin-right: auto;
         
-        background-color: yellow;
     
             @media screen and (min-width:480px) {
                 width: 480px;
@@ -16,11 +15,11 @@
             @media screen and (min-width:768px) {
                 width: 768px;
                 padding: 60px 20px 120px;
-    
             }
     
-            @media screen and (min-width:1200px) {
-                width: 1200px;
+            @media screen and (min-width:1280px) {
+                width: 1280px;
+                padding: 100px 123px 200px 16px;
             }
 }
 
@@ -61,6 +60,10 @@
     @media screen and (min-width:768px){
         flex-direction: row;
     }
+        @media screen and (min-width:1280px){
+            gap: 140px;
+        }
+
 }
 .customers-cards{
     background-color: #fff;
@@ -71,6 +74,9 @@
         @media screen and (min-width:768px){
             width: 336px;
         }
+                @media screen and (min-width:1280px){
+                    width: 500px;
+                }
 }
 .customers-card__text{
 font-family: 'Roboto';
@@ -81,6 +87,12 @@ font-family: 'Roboto';
 
     color: #2C2C2C;
         margin-bottom: 40px;
+
+        @media screen and (min-width:768px){
+            font-size: 18;
+            line-height: 1.17;
+        }
+
 }
 .customers__user{
     display: flex;
