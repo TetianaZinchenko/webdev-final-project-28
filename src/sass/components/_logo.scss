@@ -1,11 +1,11 @@
 .header__logo {
-  @extend %img;
-
   width: 66px;
   height: 52px;
 
   padding-top: 10px;
   padding-bottom: 10px;
+
+  display: block;
 
   // @media screen and (min-width: $tablet) {
   //   margin-right: 88px;
