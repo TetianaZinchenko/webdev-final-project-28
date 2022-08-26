@@ -6,7 +6,7 @@
     padding-top: 100px;
     padding-bottom: 100px;
    }
-
+outline: 2px solid red;
 }
 
 .footer-container {
@@ -56,13 +56,14 @@
 
 .footer-nav {
     display: flex;
-    text-align: center;
     justify-content: center;
     margin-bottom: 40px;
     width: 100%;
 
     @media screen and (min-width:$tablet) {
+       align-items: center;
         margin-bottom: 73px;
+
     }
 
     @media screen and (min-width:$desktop) {
@@ -106,6 +107,15 @@ margin-bottom: 20px;
 .subscribe-footer{
     display: block;
     margin-bottom: 60px;
+ @media screen and(min-width:$tablet) {
+            display: flex;
+            
+        }
+    
+ @media screen and (min-width:$desktop) {
+            display: flex;
+    
+        }
 }
 .subscribe-footer__title{
     margin-bottom: 12px;
@@ -117,7 +127,7 @@ margin-bottom: 20px;
 .subscribe-footer__label{
     display: flex;
     align-items: center;
-    width: 279px;
+    max-width: 279px;
 
     margin-bottom: 20px;
 
@@ -127,7 +137,8 @@ margin-bottom: 20px;
     border-radius: 30px;
 
     @media screen and (max-width:$tablet) and(min-width:$desktop){
-        display: inline;
+        margin-bottom: 12px;
+        margin-right: 13px;
     }
 }
 .subscribe-footer__input{
@@ -183,17 +194,26 @@ margin-bottom: 20px;
 .subscribe__link{
     color:$footerLinkColor;
 }
+.footer-special{
+    text-align: center;
 
+    @media screen and (min-width:$tablet) {
+        text-align: end;
+    }
+}
 .footer-special__list{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
     gap: 32px;
+    margin-bottom: 40px;
     list-style: none;
+    @media screen and(min-width:$tablet) {
+        
+    }justify-content: flex-start;
 
 }  
-.footer-specia__link{
+.footer-special__link{
     font-weight: 400;
     font-size: 10px;
     line-height: calc(12/10);
@@ -203,7 +223,10 @@ margin-bottom: 20px;
     
     color: $footerLinkColor;
 }
-.footer-specia__link-dark{
-
+.footer-special__text{
     color: $primaryTextColor;
+
+    font-weight: 400;
+        font-size: 10px;
+        line-height: calc(12/10);
 }
