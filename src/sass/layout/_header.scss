@@ -5,11 +5,17 @@
     align-items: center;
 
     display: flex;
+
+    justify-content: space-between;
   }
 
   @media screen and (max-width: calc($desktop - 1px)) {
     // position: relative;
   }
+}
+
+.header-nav {
+  display: flex;
 }
 
 .nav {
@@ -18,12 +24,13 @@
   }
 
   @media screen and (min-width: $tablet) {
+    display: flex;
     // align-items: center;
     align-items: baseline;
   }
 
   @media screen and (min-width: $tablet) and (max-width: calc($desktop - 1px)) {
-    display: flex;
+    // display: flex;
     // justify-content: flex-end;
   }
 }
@@ -47,11 +54,16 @@
   //   }
 }
 
+.nav__item {
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
+
 .nav__link {
   @extend %link;
 
-  padding-top: 28px;
-  padding-bottom: 28px;
+  //   padding-top: 28px;
+  //   padding-bottom: 28px;
 
   font-weight: 400;
   font-size: 14px;
@@ -74,5 +86,33 @@
     color: $btnBgColor;
 
     text-decoration-line: underline;
+  }
+
+  //   &--button {
+  //     @extend %button;
+
+  //     display: block;
+  //     align-items: center;
+  //     margin: 5px 17px 6px 16px;
+
+  //     background-color: $btnBgColor;
+  //   }
+}
+
+.nav__button {
+  @extend %button;
+
+  margin: 5px 17px 6px 16px;
+
+  font-weight: 500;
+  font-size: 13px;
+
+  background-color: $btnBgColor;
+
+  transition: background-color $timingFunction;
+
+  &:hover,
+  &:focus {
+    background-color: $btnBgAccentColor;
   }
 }
