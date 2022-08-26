@@ -109,6 +109,11 @@ background-size: 100% 545px;
                     width: 500px;
                 }
 }
+.customers-cards__icons{
+    fill: rgba(255, 229, 80, 1);
+    margin-bottom: 28px;
+
+}
 .customers-card__text{
 font-family: 'Roboto';
     font-style: normal;
@@ -131,6 +136,13 @@ font-family: 'Roboto';
 
     width: 160px;
     border-right: 1px solid #7EB101;
+    margin-bottom: 8px;
+    @media screen and (min-width:768px) {
+        margin-bottom: 12px;
+        }
+                @media screen and (min-width:1280px) {
+                    margin-bottom: 14px;
+                }
 }
 .user__name{
     font-family: 'Roboto';
