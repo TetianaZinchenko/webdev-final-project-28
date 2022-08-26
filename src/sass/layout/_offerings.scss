@@ -114,6 +114,9 @@
     //     ),
     //     url(../images/offerings/Rectangle-lg@2x.png);
     // }
+
+    display: flex;
+    align-items: center;
   }
 }
 
@@ -124,7 +127,7 @@
 }
 
 .offerings__list {
-  @extend %list;
+  //   @extend %list;
 
   flex-wrap: wrap;
 
@@ -149,6 +152,11 @@
   @media screen and (min-width: $tablet) {
     display: flex;
     gap: 116px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    // display: flex;
+    gap: 67px;
   }
 }
 
@@ -224,6 +232,14 @@
 }
 
 .apples {
+  position: relative;
+  width: 50%;
+}
+
+.apples__two {
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 .offerings__item--tablet {
@@ -245,6 +261,10 @@
   @media screen and (min-width: $tablet) {
     margin: 0;
     padding: 0;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 90px;
   }
 }
 
@@ -329,6 +349,10 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
 }
 
 .offerings__call-container {
