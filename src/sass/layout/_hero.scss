@@ -29,6 +29,11 @@
   @media screen and (min-width: 768px) {
     padding-bottom: 73px;
   }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 159px;
+    padding-bottom: 164px;
+  }
 }
 
 .hero__title {
@@ -43,6 +48,13 @@
     font-size: 42px;
     line-height: 120%;
   }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 44px;
+    width: calc(5 / 12 * 100%);
+    font-size: 42px;
+    line-height: 120%;
+  }
 }
 
 .hero__text {
@@ -54,6 +66,10 @@
     margin-bottom: 40px;
     width: 336px;
     font-size: 16px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: calc(5 / 12 * 100%);
   }
 }
 
@@ -74,8 +90,32 @@
   @media screen and (min-width: 768px) {
     position: absolute;
     top: 89px;
-    right: 0;
+    right: 32px;
 
     display: block;
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    border: 14px solid $additionalColor;
+  }
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: 89px;
+    right: 32px;
+
+    display: block;
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    border: 14px solid $additionalColor;
+  }
+
+  @media screen and (min-width: 1280px) {
+    top: -145px;
+    right: 16px;
+    width: 580px;
+    height: 580px;
+    border: 26px solid $additionalColor;
   }
 }
