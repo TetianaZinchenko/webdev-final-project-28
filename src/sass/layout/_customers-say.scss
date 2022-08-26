@@ -1,0 +1,108 @@
+
+.customers__container{ 
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 60px;
+            padding-bottom: 60px;
+            margin-left: auto;
+            margin-right: auto;
+        
+        background-color: yellow;
+    
+            @media screen and (min-width:480px) {
+                width: 480px;
+            }
+    
+            @media screen and (min-width:768px) {
+                width: 768px;
+                padding: 60px 20px 120px;
+    
+            }
+    
+            @media screen and (min-width:1200px) {
+                width: 1200px;
+            }
+}
+
+.customers__title{
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 1.18;
+    
+        color: #2C2C2C;
+        margin-bottom: 20px;
+        @media  screen and (min-width:768px) {
+            font-weight: 700;
+                font-size: 42px;
+                line-height: 1.17;
+        }
+}
+.customers__text{
+        font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.14;
+        
+            color: #2C2C2C;
+            margin-bottom: 32px;
+            
+            @media screen and (min-width:768px){
+                font-size: 16px;
+                line-height: 1.19;
+            }
+            
+}
+.customers__list{
+    display: flex;
+    flex-direction: column;
+        gap: 32px;
+
+    @media screen and (min-width:768px){
+        flex-direction: row;
+    }
+}
+.customers-cards{
+    background-color: #fff;
+    padding: 8px;
+    border-radius: 32px;
+    border-top-left-radius: 0px;
+    
+        @media screen and (min-width:768px){
+            width: 336px;
+        }
+}
+.customers-card__text{
+font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.19;
+
+    color: #2C2C2C;
+        margin-bottom: 40px;
+}
+.customers__user{
+    display: flex;
+    gap: 16px;
+
+    width: 160px;
+    border-right: 1px solid #7EB101;
+}
+.user__name{
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.5;
+        color: #2C2C2C;
+        margin-bottom: 2px;
+}
+.user__category{
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.5;
+        color: #2C2C2C;
+}
