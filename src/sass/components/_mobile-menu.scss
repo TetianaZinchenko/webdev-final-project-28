@@ -17,7 +17,6 @@
   border: none;
   background-color: transparent;
 
-  fill: $footerLinkColor;
   cursor: pointer;
 
   @media screen and (min-width: $tablet) {
@@ -53,9 +52,14 @@
   }
 }
 
-.mobile-menu__icon:hover,
-.mobile-menu__icon:focus {
+.mobile-menu__icon {
   fill: $footerLinkColor;
+  transition: fill $timingFunction;
+
+  &:hover,
+  &:focus {
+    fill: $additionalColor;
+  }
 }
 
 .mobile-menu-nav {
