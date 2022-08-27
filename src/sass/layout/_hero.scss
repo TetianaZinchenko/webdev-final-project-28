@@ -52,9 +52,12 @@
   font-size: 14px;
   line-height: 150%;
 
+  width: 266px;
+
   @media screen and (min-width: $tablet) {
     margin-bottom: 40px;
     font-size: 16px;
+    width: auto;
   }
 }
 
