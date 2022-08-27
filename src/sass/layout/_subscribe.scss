@@ -26,7 +26,7 @@
   font-weight: 700;
   font-size: 28px;
   line-height: 120%;
-  text-align: justify;
+
   color: $primaryTextColor;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -65,7 +65,7 @@
   padding-top: 12px;
   padding-bottom: 12px;
   padding-left: 11px;
-  background: #ffffff;
+  background-color: #ffffff;
   border: 0.854167px solid #ffe550;
   border-radius: 30px;
   font-family: 'Roboto';
@@ -74,6 +74,12 @@
   font-size: 12px;
   line-height: 150%;
   color: #505050;
+  &:invalid {
+    border: 0.854167px solid #ff705d;
+  }
+  // &:valid {
+  //   border: 0.854167px solid #7eb101;
+  // }
 
   @media screen and (min-width: 480px) {
     width: 100%;
@@ -82,6 +88,7 @@
     width: 395px;
   }
 }
+
 .subscribe__btn {
   width: 106px;
   height: 42px;
