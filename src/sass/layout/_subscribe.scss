@@ -77,10 +77,12 @@
   &:invalid {
     border: 0.854167px solid #ff705d;
   }
-  // &:valid {
-  //   border: 0.854167px solid #7eb101;
-  // }
-
+  &:valid {
+    border: 0.854167px solid #7eb101;
+  }
+  &:placeholder-shown {
+    border: 0.854167px solid #ffe550;
+  }
   @media screen and (min-width: 480px) {
     width: 100%;
   }
