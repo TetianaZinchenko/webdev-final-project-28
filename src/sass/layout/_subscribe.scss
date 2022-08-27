@@ -27,7 +27,7 @@
   font-size: 28px;
   line-height: 120%;
   text-align: justify;
-  color: #2c2c2c;
+  color: $primaryTextColor;
   margin-top: 20px;
   margin-bottom: 20px;
   @media screen and (min-width: 768px) {
@@ -40,7 +40,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: calc(16 / 14);
-  color: #2c2c2c;
+  color: $primaryTextColor;
   margin-bottom: 40px;
   @media screen and (min-width: 768px) {
     font-size: 16px;
@@ -92,7 +92,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
-  color: #2c2c2c;
+  color: $primaryTextColor;
   cursor: pointer;
   border: none;
 
