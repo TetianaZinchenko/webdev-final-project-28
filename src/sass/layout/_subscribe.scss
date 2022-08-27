@@ -8,9 +8,14 @@
   padding: 0;
   justify-content: center;
   align-items: center;
-
   @media screen and (min-width: 768px) {
-    margin-left: 430px;
+    justify-content: normal;
+    flex-direction: row-reverse;
+    height: 136px;
+    margin: 0;
+  }
+  @media screen and (min-width: 1280px) {
+    padding: 0;
   }
 }
 .subscribe__title {
@@ -38,6 +43,7 @@
   @media screen and (min-width: 768px) {
     font-size: 16px;
     line-height: 150%;
+    max-width: 656px;
   }
 }
 .subscribe__form-group {
