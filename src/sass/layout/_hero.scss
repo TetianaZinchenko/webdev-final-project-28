@@ -1,38 +1,14 @@
-.container {
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-left: auto;
-  margin-right: auto;
-
-  @media screen and (min-width: 480px) {
-    width: 480px;
-  }
-
-  @media screen and (min-width: 768px) {
-    position: relative;
-    width: 768px;
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    width: 1280px;
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-}
-
 .hero {
   padding-top: 60px;
   padding-bottom: 50px;
 
-  @media screen and (min-width: 768px) {
-    padding-bottom: 73px;
+  @media screen and (min-width: $tablet) {
+    padding-bottom: 0;
   }
 
-  @media screen and (min-width: 1280px) {
-    padding-top: 159px;
-    padding-bottom: 164px;
+  @media screen and (min-width: $desktop) {
+    padding-top: 14px;
+    padding-bottom: 14px;
   }
 }
 
@@ -42,19 +18,28 @@
   font-size: 28px;
   line-height: calc(33 / 28);
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     margin-bottom: 44px;
-    width: 75%;
     font-size: 42px;
     line-height: 120%;
   }
 
-  @media screen and (min-width: 1280px) {
-    margin-bottom: 44px;
-    width: calc(5 / 12 * 100%);
-    font-size: 42px;
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 28px;
+    font-size: 48px;
     line-height: 120%;
   }
+}
+
+.hero__container {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
+}
+
+.hero__cont-wrap {
+  flex-basis: calc((100% - 32px) / 2);
+  margin-right: auto;
 }
 
 .hero__text {
@@ -62,60 +47,105 @@
   font-size: 14px;
   line-height: 150%;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     margin-bottom: 40px;
-    width: 336px;
     font-size: 16px;
-  }
-
-  @media screen and (min-width: 768px) {
-    width: calc(5 / 12 * 100%);
   }
 }
 
 .hero-btn {
   padding: 6px 18px;
-  border: transparent;
-  border-radius: 30px;
+
   font-weight: 500;
   font-size: 13px;
   line-height: 150%;
   text-align: right;
   background-color: $btnBgColor;
+
+  border: transparent;
+  border-radius: 30px;
+  cursor: pointer;
+
+  transition: background-color $timingFunction;
+
+  &:hover,
+  &:focus {
+    background-color: $btnBgAccentColor;
+  }
 }
 
-.hero__wrap {
+.hero__img-wrap {
+  position: relative;
   display: none;
 
-  @media screen and (min-width: 768px) {
-    // position: absolute;
-    // top: 89px;
-    // right: 32px;
-
+  @media screen and (min-width: $tablet) {
+    margin-top: -55px;
+    margin-left: 8px;
+    margin-right: 8px;
     display: block;
-    width: 320px;
-    height: 320px;
     border-radius: 50%;
-    border: 14px solid $additionalColor;
+    border: 14px solid;
+    border-color: $additionalColor;
+    transition: border-color $timingFunction;
   }
 
-  @media screen and (min-width: 768px) {
-    position: absolute;
-    top: 89px;
-    right: 32px;
-
-    display: block;
-    width: 320px;
-    height: 320px;
-    border-radius: 50%;
-    border: 14px solid $additionalColor;
+  @media screen and (min-width: $desktop) {
+    border: 26px solid;
+    border-color: $additionalColor;
+    transition: border-color $timingFunction;
+    margin-top: 0;
   }
 
-  @media screen and (min-width: 1280px) {
-    top: -145px;
-    right: 16px;
-    width: 580px;
-    height: 580px;
-    border: 26px solid $additionalColor;
+  &:hover {
+    border-color: $btnBgColor;
   }
+}
+
+.slider-btn {
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: transparent;
+  border-radius: 4px;
+  cursor: pointer;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  &--left {
+    left: -22px;
+  }
+  &--right {
+    right: -22px;
+  }
+
+  transition: fill $timingFunction;
+  transition: box-shadow $timingFunction;
+
+  @media screen and (min-width: $desktop) {
+    &--left {
+      left: -40px;
+    }
+    &--right {
+      right: -22px;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    fill: $footerLinkColor;
+  }
+
+  &:active {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.hero__img {
+  @extend %img;
 }
