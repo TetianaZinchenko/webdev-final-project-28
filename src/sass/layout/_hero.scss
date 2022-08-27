@@ -134,7 +134,14 @@
     &--right {
       right: -22px;
     }
+
+    & .slider-btn__icon {
+      width: 48px;
+      height: 40px;
+    }
   }
+
+  fill: red;
 
   &:hover,
   &:focus {
@@ -148,4 +155,8 @@
 
 .hero__img {
   @extend %img;
+}
+
+use {
+  fill: red;
 }
