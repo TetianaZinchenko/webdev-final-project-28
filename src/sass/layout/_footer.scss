@@ -6,7 +6,7 @@
     margin-right: auto;
     background: #FEFEFE;
     background-repeat: no-repeat;
-    background-position: center 0;
+    background-position: center;
     background-size: cover;
     box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
 
@@ -14,6 +14,7 @@
     @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx){
+
         background-image: url(../images/footer/Group\ 66@2x-sm.png);
         }
 
@@ -27,6 +28,7 @@
     }
     padding-top: 100px;
     padding-bottom: 100px;
+    
 }
 //desktop
 @media screen and (min-width:$desktop) {
@@ -38,7 +40,7 @@
     }
     padding-top: 100px;
     padding-bottom: 100px;
-    
+
 }
 
 
@@ -46,19 +48,20 @@
 
 .footer-container {
     display: flex;
-    align-items: center;
+
     justify-content: center;
     flex-direction: column;
 
     @media screen and (min-width:768px) {
-       
+       align-items: flex-start;
     }
 
     @media screen and (min-width:1280px) {
+        flex-direction: row;
         align-items: baseline;
-            justify-content: center;
-            flex-direction: row;
-            flex-wrap: wrap;
+
+        justify-content: flex-end;
+        flex-wrap: wrap;
 
     }
        // outline: 2px solid red;
@@ -78,20 +81,19 @@
 
 .footer-nav {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     margin-bottom: 40px;
     width: 100%;
 
     @media screen and (min-width:$tablet) {
        align-items: center;
-        justify-content: flex-start;
-        margin-bottom: 73px;
+       margin-bottom: 73px;
 
     }
 
     @media screen and (min-width:$desktop) {
         margin-bottom: 0;
-    justify-content: flex-start;
+    
         
     }
 }
@@ -129,15 +131,18 @@ margin-bottom: 20px;
     
 }
 .subscribe-footer{
-    display: block;
-    margin-bottom: 60px;
+display: flex;
+flex-direction: column;
+margin-bottom: 60px;
  @media screen and(min-width:$tablet) {
-            display: flex;
+         display: inline;
+        flex-direction: row;
         }
     
  @media screen and (min-width:$desktop) {
     justify-content: flex-end;
-    margin-bottom: 0;
+    flex-direction: row;
+    margin-bottom: 80px;
 
         }
 }
@@ -154,10 +159,7 @@ margin-bottom: 20px;
     margin-bottom: 20px;
 
 
-    background: $primaryBgColor;
-    border: 0.85px solid $additionalColor;
-    border-radius: 30px;
-
+    
     @media screen and (max-width:$tablet) and(min-width:$desktop){
         margin-bottom: 12px;
         margin-right: 13px;
@@ -168,12 +170,15 @@ margin-bottom: 20px;
     }
 }
 .subscribe-footer__input{
-    display: inline-block;
+   width: 279px;
     padding-top: 12px;
     padding-bottom: 12px;
     padding-left: 12px;
-    width: 100%;
-    border: none;
+    background: $primaryBgColor;
+    border: 0.85px solid $additionalColor;
+        border-radius: 30px;
+    
+    //border: none;
 
     color: #505050;
 
@@ -184,9 +189,8 @@ margin-bottom: 20px;
 }
 
 .subscribe-btn{
-    display: inline-flex;
-    align-items: flex-end;
-    gap: 13px;
+   width: 103px;
+   height: 42px;
     padding: 11px 22px;
     margin-bottom: 20px;
 
@@ -242,7 +246,12 @@ margin-bottom: 20px;
         margin-bottom: 0;
 
     }
+
 }  
+
+
+
+
 .footer-special__link{
     font-weight: 400;
     font-size: 10px;
@@ -261,9 +270,7 @@ font-weight: 400;
     line-height: calc(12/10);
 
     @media screen and (min-width:$tablet) {
-        margin: auto;
+    margin-left: auto;
     }
-    @media screen and (min-width:$desktop) {
-        margin: auto;
-    }
+   
 }
