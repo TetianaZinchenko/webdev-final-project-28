@@ -6,6 +6,16 @@
     background-repeat: no-repeat;
     background-position: center 0;
     box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
+    background-image: url(../images/footer/Group\ 66@1x-sm.jpg);
+
+//tablet
+@media screen and (min-width:$tablet) {
+    background-image: url(../images/footer/Frame\ 20@1x-md.jpg);
+}
+//desktop
+@media screen and (min-width:$desktop) {
+    background-image: url(../images/footer/Group\ 60@1x-lg.jpg);
+}
 
     /*background-image: url(./src\images\footer\Group-66.png);
 @media (min-device-pixel-ratio: 2),
