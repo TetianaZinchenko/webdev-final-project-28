@@ -95,7 +95,7 @@
   }
 
   @media screen and (min-width: $desktop) {
-    margin-top: -275px;
+    margin-top: -289px;
     border: 26px solid;
     border-color: $additionalColor;
     transition: border-color $timingFunction;
@@ -159,6 +159,7 @@
   }
 
   &:active {
+    fill: $mobileMenuColor;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
   }
 }
