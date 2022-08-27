@@ -7,6 +7,7 @@
     background: #FEFEFE;
     background-repeat: no-repeat;
     background-position: center 0;
+    background-size: cover;
     box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
 
     background-image: url(../images/footer/Group\ 66@1x-sm.png);
@@ -132,13 +133,12 @@ margin-bottom: 20px;
     margin-bottom: 60px;
  @media screen and(min-width:$tablet) {
             display: flex;
-            
         }
     
  @media screen and (min-width:$desktop) {
-            display: flex;
     justify-content: flex-end;
     margin-bottom: 0;
+
         }
 }
 .subscribe-footer__title{
@@ -149,20 +149,22 @@ margin-bottom: 20px;
     line-height: calc(21/14);
 }
 .subscribe-footer__label{
-    display: flex;
-    align-items: center;
-    max-width: 279px;
-
+    display: inline;
+    align-items:center;
     margin-bottom: 20px;
 
 
     background: $primaryBgColor;
-    border: 0.854167px solid $additionalColor;
+    border: 0.85px solid $additionalColor;
     border-radius: 30px;
 
     @media screen and (max-width:$tablet) and(min-width:$desktop){
         margin-bottom: 12px;
         margin-right: 13px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        
     }
 }
 .subscribe-footer__input{
@@ -170,8 +172,7 @@ margin-bottom: 20px;
     padding-top: 12px;
     padding-bottom: 12px;
     padding-left: 12px;
-    width: 205px;
-    height: 42px;
+    width: 100%;
     border: none;
 
     color: #505050;
@@ -183,8 +184,8 @@ margin-bottom: 20px;
 }
 
 .subscribe-btn{
-    display: inline-block;
-    align-items: center;
+    display: inline-flex;
+    align-items: flex-end;
     gap: 13px;
     padding: 11px 22px;
     margin-bottom: 20px;
@@ -196,7 +197,7 @@ margin-bottom: 20px;
     line-height: calc(19/13);
 
     background:$primaryBgColor;
-    border: 0.854167px solid $footerLinkColor;
+    border: 0.85px solid $footerLinkColor;
     border-radius: 30px;
 
     &:focus,
@@ -217,6 +218,9 @@ margin-bottom: 20px;
 }
 .subscribe__link{
     color:$footerLinkColor;
+    font-weight: 400;
+        font-size: 10px;
+        line-height: calc(12/10);
 }
 .footer-special{
     text-align: center;
