@@ -1,9 +1,8 @@
 .offerings {
   background-repeat: no-repeat;
-  background-position: center;
   background-size: cover;
-
   background-image: url(../images/offerings/Rectangle-sm@1x.png);
+
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
@@ -16,6 +15,9 @@
   }
 
   @media screen and (min-width: $tablet) {
+    /* offset */
+    /*margin-top: -108px;*/
+
     background-image: url(../images/offerings/Rectangle-md@1x.png);
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -30,7 +32,11 @@
   }
 
   @media screen and (min-width: $desktop) {
+    /*offset*/
+    /*margin-top: -161px;*/
+
     background-image: url(../images/offerings/Rectangle-lg@1x.png);
+
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
@@ -42,47 +48,66 @@
         url(../images/offerings/Rectangle-lg@2x.png);
     }
   }
+
+  &--apple-tablet {
+    display: none;
+    @media screen and (min-width: $tablet) and (max-width: $tablet-max) {
+      display: block;
+      padding-bottom: 67px;
+    }
+  }
 }
 
-.section {
+.offerings__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   padding-top: 41px;
-  padding-bottom: 60px;
 
   @media screen and (min-width: $tablet) {
     padding-top: 150px;
-    padding-bottom: 100px;
   }
 
   @media screen and (min-width: $desktop) {
     padding-top: 177px;
-    padding-bottom: 75px;
-
-    display: flex;
-    align-items: center;
+    flex-direction: row;
   }
 }
 
-.offerings {
-  @media screen and (min-width: $desktop) {
+.offerings__apples {
+  margin-bottom: 60px;
+
+  @media screen and (min-width: $tablet) {
     display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 90px;
+    margin-bottom: 43px;
+  }
+}
+
+.offerings__apples,
+.offerings__content {
+  @media screen and (min-width: $tablet) and (max-width: $tablet-max) {
+    width: 100%;
   }
 }
 
 .offerings__list {
-  flex-wrap: wrap;
+  margin-bottom: 28px;
 
-  display: flex;
-}
-
-.offerings__list--apple {
   @media screen and (min-width: $tablet) {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    margin-bottom: 40px;
+  }
 
-    align-items: center;
-
-    margin-bottom: 67px;
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 32px;
   }
 }
 
@@ -93,6 +118,7 @@
   }
 
   @media screen and (min-width: $desktop) {
+    gap: 67px;
   }
 }
 
@@ -103,14 +129,17 @@
 
   color: $primaryTextColor;
 
-  margin-bottom: 28px;
+  margin-bottom: 20px;
 
   @media screen and (min-width: $tablet) {
+    margin-right: 210px;
     font-size: 42px;
     line-height: calc(49 / 42);
+  }
 
-    display: inline-block;
-    max-width: 526px;
+  @media screen and (min-width: $desktop) {
+    line-height: calc(50 / 42);
+    margin-right: 0px;
   }
 }
 
@@ -125,18 +154,23 @@
 
 .offerings__text {
   margin-bottom: 28px;
+  margin-right: 8px;
 
   @media screen and (min-width: $tablet) {
     font-size: 16px;
     line-height: calc(19 / 16);
+    margin-bottom: 40px;
 
     display: inline-block;
     max-width: 526px;
   }
+  @media screen and (min-width: $desktop) {
+    line-height: calc(24 / 16);
+  }
 }
 
 .offerings__text-part {
-  margin-bottom: 28px;
+  margin-right: 28px;
 
   @media screen and (min-width: $tablet) {
     display: inline-block;
@@ -152,21 +186,29 @@
   margin-bottom: 16px;
 
   color: $primaryTextColor;
+
+  @media screen and (min-width: $desktop) {
+    line-height: calc(25 / 18);
+  }
+}
+
+.offerings__text-part {
+  @media screen and (min-width: $desktop) {
+    line-height: calc(21 / 14);
+  }
 }
 
 .offerings__item {
-  @extend %img;
-}
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: nowrap;
 
-.apples {
-  position: relative;
-  width: 50%;
-}
+  margin-bottom: 28px;
 
-.apples__two {
-  position: absolute;
-  right: 0;
-  bottom: 0;
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 0px;
+  }
 }
 
 .offerings__item--tablet {
@@ -180,17 +222,12 @@
 }
 
 .offerings__item--apple {
-  padding-bottom: 60px;
-
-  margin: auto;
-
   @media screen and (min-width: $tablet) {
     margin: 0;
     padding: 0;
   }
 
   @media screen and (min-width: $desktop) {
-    margin-right: 90px;
   }
 }
 
@@ -223,12 +260,22 @@
   background-color: $primaryBgColor;
 }
 
+.offerings__call-container {
+  margin-bottom: 60px;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 100px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 0px;
+  }
+}
+
 .offerings__button {
   @extend %button;
 
-  min-width: 106px;
-  min-height: 40px;
-
+  padding: 8px 20px;
   border: 2px solid $footerLinkColor;
 
   margin-right: 24px;
@@ -250,8 +297,8 @@
   @extend %link;
 
   font-weight: 400;
-  font-size: 14px;
-  line-height: 150%;
+  font-size: 13px;
+  line-height: calc(20 / 13);
 
   color: $mobileMenuColor;
 
