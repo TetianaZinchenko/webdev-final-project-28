@@ -1,10 +1,23 @@
 .footer {
     padding-top: 60px;
     padding-bottom: 60px;
+    max-width: 1280px;
+    background: #FEFEFE;
+    background-repeat: no-repeat;
+    background-position: center 0;
+    box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
+
+    /*background-image: url(./src\images\footer\Group-66.png);
+@media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(./src\images\footer\Group-66.png);
+    }*/
 
    @media screen and (min-width:768px)and (min-width:1280px) {
     padding-top: 100px;
     padding-bottom: 100px;
+
    }
 outline: 2px solid red;
 }
@@ -15,20 +28,17 @@ outline: 2px solid red;
     justify-content: center;
     flex-direction: column;
 
-  /*  @media screen and (min-width:768px) {
-        align-items: baseline;
-        justify-content: space-around;
-        flex-direction: row;
-        flex-wrap: wrap;
-
+    @media screen and (min-width:768px) {
+       
     }
 
     @media screen and (min-width:1280px) {
         align-items: baseline;
+            justify-content: center;
+            flex-direction: row;
+            flex-wrap: wrap;
 
-        justify-content: space-between;
-
-    }*/
+    }
 }
 
 .footer-logo {
@@ -62,12 +72,14 @@ outline: 2px solid red;
 
     @media screen and (min-width:$tablet) {
        align-items: center;
+        justify-content: flex-start;
         margin-bottom: 73px;
 
     }
 
     @media screen and (min-width:$desktop) {
         margin-bottom: 0;
+    justify-content: flex-start;
         
     }
 }
@@ -114,7 +126,7 @@ margin-bottom: 20px;
     
  @media screen and (min-width:$desktop) {
             display: flex;
-    
+    justify-content: flex-end;
         }
 }
 .subscribe-footer__title{
@@ -205,13 +217,14 @@ margin-bottom: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 32px;
     margin-bottom: 40px;
     list-style: none;
     @media screen and(min-width:$tablet) {
-        
-    }justify-content: flex-start;
+        justify-content: flex-start;
 
+    }
 }  
 .footer-special__link{
     font-weight: 400;
@@ -223,10 +236,24 @@ margin-bottom: 20px;
     
     color: $footerLinkColor;
 }
-.footer-special__text{
+.footer-specia__item:last-child{
+color: $primaryTextColor;
+
+font-weight: 400;
+    font-size: 10px;
+    line-height: calc(12/10);
+
+    @media screen and (min-width:$tablet) {
+        margin: auto;
+    }
+    @media screen and (min-width:$desktop) {
+        margin: auto;
+    }
+}
+/*.footer-special__text{
     color: $primaryTextColor;
 
     font-weight: 400;
         font-size: 10px;
         line-height: calc(12/10);
-}
+}*/
