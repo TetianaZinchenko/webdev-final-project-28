@@ -11,12 +11,11 @@
         </symbol>
 
         <symbol id="Ellipse-580" viewBox="0 0 32 32">
-            <path fill="#fefefe" style="fill: var(--color1, #fefefe); stroke: var(--color2, #ffe550)" stroke="#ffe550"
+            <path fill="#fefefe" style="fill: var(--color1, #fefefe)"
                 stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4345"
                 d="M31.283 16c0 8.44-6.842 15.283-15.283 15.283s-15.283-6.842-15.283-15.283c0-8.44 6.842-15.283 15.283-15.283s15.283 6.842 15.283 15.283z">
             </path>
         </symbol>
-
         <symbol id="Ellipse-320" viewBox="0 0 32 32">
             <path fill="#fff" style="fill: var(--color3, #fff); stroke: var(--color2, #ffe550)" stroke="#ffe550"
                 stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4"
