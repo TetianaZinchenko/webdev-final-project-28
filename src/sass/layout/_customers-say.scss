@@ -1,0 +1,169 @@
+.customers{
+    height: 770px;
+    background-image: url(../images/customers-say/customers-backround-sm@1x.png);
+background-size: 100%  770px;
+        background-repeat: no-repeat;
+        background-position: center;
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: url(../images/customers-say/customers-backround-sm@2x.png);
+            }
+            @media screen and (min-width:768px) {
+                height: 545px;
+                background-image: url(../images/customers-say/customers-backround-md@1x.png);
+background-size: 100% 545px;
+                @media (min-device-pixel-ratio: 2),
+                    (min-resolution: 192dpi),
+                    (min-resolution: 2dppx) {
+                        background-image: url(../images/customers-say/customers-backround-md@2x.png);
+                    }}
+            @media screen and (min-width:1280px){
+                height: 648px;
+                 background-image: url(../images/customers-say/customers-background-lg@1x.png);
+                 background-size: 100% 648px;
+                 @media (min-device-pixel-ratio: 2),
+                         (min-resolution: 192dpi),
+                        (min-resolution: 2dppx) {
+                 background-image: url(../images/customers-say/customers-background-lg@2x.png);
+                                            }
+            }
+
+    } 
+    
+.customers__container{ 
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 60px;
+            padding-bottom: 60px;
+            margin-left: auto;
+            margin-right: auto;
+      
+            @media screen and (min-width:480px) {
+                width: 480px;
+            }
+    
+            @media screen and (min-width:768px) {
+                width: 768px;
+                padding: 60px 20px 120px;
+            }
+    
+            @media screen and (min-width:1280px) {
+                width: 1280px;
+                padding: 100px 123px 200px 16px;
+            }
+}
+
+.customers__title{
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 1.18;
+    
+        color: #2C2C2C;
+        margin-bottom: 20px;
+        @media  screen and (min-width:768px) {
+            font-weight: 700;
+                font-size: 42px;
+                line-height: 1.17;
+        }
+}
+.customers__text{
+        font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.14;
+        
+            color: #2C2C2C;
+            margin-bottom: 32px;
+            
+            @media screen and (min-width:768px){
+                font-size: 16px;
+                line-height: 1.19;
+                
+            }
+            
+}
+.customers__list{
+    display: flex;
+    flex-direction: column;
+        gap: 32px;
+
+    @media screen and (min-width:768px){
+        flex-direction: row;
+    }
+        @media screen and (min-width:1280px){
+            gap: 140px;
+        }
+
+}
+.customers-cards{
+    background-color: #fff;
+    padding: 8px;
+    border-radius: 32px;
+    border-top-left-radius: 0px;
+    
+        @media screen and (min-width:768px){
+            width: 336px;
+            padding: 12px;
+        }
+                @media screen and (min-width:1280px){
+                    width: 500px;
+                }
+}
+.customers-cards__icons{
+    margin-bottom: 28px;
+}
+.customers-card__text{
+font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.19;
+
+    color: #2C2C2C;
+        margin-bottom: 40px;
+
+        @media screen and (min-width:768px){
+            font-size: 18;
+            line-height: 1.17;
+            width: 312px;
+        }
+                @media screen and (min-width:1280px){
+                    width: 473px;
+                }
+
+}
+.customers__user{
+    display: flex;
+    gap: 16px;
+
+    width: 160px;
+    border-right: 1px solid #7EB101;
+    margin-bottom: 8px;
+    @media screen and (min-width:768px) {
+        margin-bottom: 12px;
+        }
+                @media screen and (min-width:1280px) {
+                    margin-bottom: 14px;
+                }
+}
+.user__name{
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.5;
+        color: #2C2C2C;
+        margin-bottom: 2px;
+}
+
+.user__category {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #2C2C2C;
+}
+
