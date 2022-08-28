@@ -1,5 +1,5 @@
 .footer {
-  background-color: #fefefe;
+  background-color: $headerBgColor;
   box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
 
   background-repeat: no-repeat;
@@ -121,7 +121,7 @@
 
   &:hover,
   &:focus {
-    color: #bbf330;
+    color: $btnBgColor;
     text-decoration-line: underline;
   }
 }
@@ -136,7 +136,7 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 150%;
-  color: #2c2c2c;
+  color: $primaryTextColor;
 }
 
 .footer-subscribe__group {
@@ -164,8 +164,8 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 150%;
-  color: #505050;
-  border: 0.854167px solid #ffe550;
+  color: $footerTextColor;
+  border: 0.854167px solid $additionalColor;
   border-radius: 30px;
   outline: transparent;
 
@@ -177,10 +177,10 @@
   }
 
   &:invalid {
-    border: 0.854167px solid #ff705d;
+    border: 0.854167px solid $footerInputError;
   }
   &:valid {
-    border: 0.854167px solid #7eb101;
+    border: 0.854167px solid $footerLinkColor;
   }
 }
 
@@ -194,9 +194,9 @@
   font-size: 13px;
   line-height: 150%;
   border-radius: 30px;
-  color: #2c2c2c;
-  background-color: #ffffff;
-  border: 0.854167px solid #7eb101;
+  color: $primaryTextColor;
+  background-color: $primaryBgColor;
+  border: 0.854167px solid $footerLinkColor;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -208,7 +208,7 @@
 }
 
 .footer-subscribe__btn:hover {
-  background-color: #ffe550;
+  background-color: $additionalColor;
 }
 
 .footer-subscribe__agreement {
@@ -217,7 +217,7 @@
   font-weight: 400;
   font-size: 10px;
   line-height: calc(12 / 10);
-  color: #2c2c2c;
+  color: $primaryTextColor;
 
   @media screen and (min-width: 768px) {
     font-size: 12px;
@@ -234,7 +234,7 @@
   color: currentColor;
 
   text-decoration-line: underline;
-  color: #7eb101;
+  color: $footerLinkColor;
 }
 
 .footer-category {
@@ -273,7 +273,7 @@
   font-size: 10px;
   line-height: calc(12 / 10);
   text-decoration-line: underline;
-  color: #7eb101;
+  color: $footerLinkColor;
 
   @media screen and (min-width: 768px) {
     font-size: 12px;
@@ -291,7 +291,7 @@
   font-weight: 400;
   font-size: 10px;
   line-height: calc(12 / 10);
-  color: #2c2c2c;
+  color: $primaryTextColor;
 
   @media screen and (min-width: 768px) {
     font-size: 12px;
