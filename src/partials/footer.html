@@ -4,27 +4,39 @@
         <div class="footer-container container"> 
             <nav class="footer-nav">
             <a class="footer-logo link" href="">
-                <svg class="footer-logo__icon icon" width="72" height="52">
+                <svg class="footer-logo__icon icon" width="72" height="72">
                     <use class="footer-logo__inons" href="./images/icons.svg#logo"></use>
                 </svg>
             </a>
             
                 <ul class="footer-nav__list list">
-                    <li class="footer-nav__item item"><a class="footer-nav__link  footer-nav__link--activity link" href="">Home</a></li>
-                    <li class="footer-nav__item item"><a class="footer-nav__link link" href="">About</a></li>
-                    <li class="footer-nav__item item"><a class="footer-nav__link link" href="">Service</a></li>
-                    <li class="footer-nav__item item"><a class="footer-nav__link link" href="">Menu</a></li>
-                    <li class="footer-nav__item item"><a class="footer-nav__link link" href="">Contact</a></li>
+                    <li class="footer-nav__item item">
+                     <a class="footer-nav__link  footer-nav__link--activity link" href="">Home</a>
+                    </li>
+                    <li class="footer-nav__item item">
+                        <a class="footer-nav__link link" href="">About</a>
+                    </li>
+                    <li class="footer-nav__item item">
+                        <a class="footer-nav__link link" href="">Service</a>
+                    </li>
+                    <li class="footer-nav__item item">
+                        <a class="footer-nav__link link" href="">Menu</a>
+                    </li>
+                    <li class="footer-nav__item item">
+                        <a class="footer-nav__link link" href="">Contact</a>
+                    </li>
                 </ul>
             </nav>
         
-         <form class="subscribe-footer"> 
-            
-            <h2 class="subscribe-footer__title">Subscribe</h2>
-           <div>
+         <form class="subscribe"> 
+            <h2 class="subscribe__title">Subscribe</h2>
+            <div class="subscribe-footer">
             <label class="subscribe-footer__label">
-                <input class="subscribe-footer__input" type="e-mail" name="e-mail" placeholder="Enter your email"
-                    required />
+                <input class="subscribe-footer__input"
+                 type="email" name="e-mail" 
+                 placeholder="Enter your email"
+                 invalid="kenzi.lawson@"
+                required />
             </label>
             <button class="subscribe-btn" type="submit">
                 Subscribe
