@@ -110,6 +110,7 @@
 }
 
 .slider-btn {
+  z-index: 100;
   padding: 4px;
 
   & .slider-btn__icon {
@@ -169,4 +170,19 @@
 
 .hero__img {
   @extend %img;
+}
+
+.swiper {
+  width: 292px;
+  height: 292px;
+
+  @media screen and (min-width: $desktop) {
+    width: 528px;
+    height: 528px;
+  }
+}
+
+.wrapper {
+  border-radius: 50%;
+  overflow: hidden;
 }
