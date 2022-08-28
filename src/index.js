@@ -53,3 +53,10 @@ function changeHeaderBackground() {
     header.classList.remove('no-transparency');
   }
 }
+
+const swiper = new Swiper('.swiper', {
+  navigation: {
+    nextEl: '.slider-btn--right',
+    prevEl: '.slider-btn--left',
+  },
+});
