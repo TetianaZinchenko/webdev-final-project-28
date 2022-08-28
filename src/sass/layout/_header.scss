@@ -70,7 +70,7 @@
 
   color: $mobileMenuColor;
 
-  transition: color $timingFunction;
+  transition: color $timingFunction, text-decoration-line $timingFunction;
 
   @media screen and (min-width: $desktop) {
     color: $primaryTextColor;
@@ -79,11 +79,6 @@
   &:hover,
   &:focus {
     color: $btnBgColor;
-  }
-
-  &--current {
-    color: $btnBgColor;
-
     text-decoration-line: underline;
   }
 }
