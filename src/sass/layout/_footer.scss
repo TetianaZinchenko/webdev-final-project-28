@@ -7,6 +7,7 @@
     background: #FEFEFE;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
 
     background-image: url(../images/footer/Group\ 66@1x-sm.png);
@@ -35,14 +36,16 @@
 @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-        background-image: url(../images/footer/Group\ 60@2x-lg.png);
+       background-image: url(../images/footer/Group\ 60@2x-lg.png);
     }
+    
  
 
 }
 
 
 }
+
 
 .footer-container {
     display: flex;
@@ -137,6 +140,7 @@ margin-bottom: 20px;
     width: 100%;
     margin-bottom: 60px;
     text-align: right;
+
  @media screen and(min-width:$tablet) {
        display: inline;
         flex-direction: row;
@@ -223,10 +227,10 @@ margin-bottom: 20px;
 
 .subscribe-btn{
     display: inline-block;
-   width: 103px;
-   height: 42px;
+     width: 103px;
+     height: 42px;
     padding: 11px 22px;
-    //margin-bottom: 20px;
+    margin-bottom: 20px;
 
     color: $primaryTextColor;
 
@@ -266,13 +270,15 @@ margin-bottom: 20px;
     }
 }
 .footer-special__list{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 32px;
-    margin-bottom: 40px;
-    list-style: none;
+        margin-bottom: 40px;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; 
+        row-gap: 40px;
+        list-style: none;
+    
+   
     @media screen and(min-width:$tablet) {
         gap: 20px;
         justify-content: flex-start;
@@ -301,15 +307,20 @@ margin-bottom: 20px;
     
     color: $footerLinkColor;
 }
+
 .footer-specia__item:last-child{
 color: $primaryTextColor;
 
+@media screen and(max-width:479px) {
+    margin: auto;
+}
+
 font-weight: 400;
-    font-size: 10px;
-    line-height: calc(12/10);
+font-size: 10px;
+line-height: calc(12/10);
 
     @media screen and (min-width:$tablet) {
-        margin-left: auto;;
+        margin-left: auto;
     }
    
 }
