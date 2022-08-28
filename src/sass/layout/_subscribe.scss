@@ -1,3 +1,17 @@
+.subscribe__container {
+  margin-top: -43px;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: -73px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-top: -93px;
+    margin-bottom: 120px;
+  }
+}
+
 .subscribe__img {
   display: flex;
   max-width: 100%;
@@ -34,7 +48,13 @@
   @media screen and (min-width: 768px) {
     font-size: 42px;
   }
+
+  @media screen and (min-width: 1280px) {
+    display: inline-block;
+    margin-top: 46px;
+  }
 }
+
 .subscribe__text {
   font-family: 'Roboto';
   font-style: normal;
