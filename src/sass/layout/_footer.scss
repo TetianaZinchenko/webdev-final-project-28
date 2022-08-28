@@ -175,14 +175,13 @@
     min-width: 279px;
     margin: 0;
   }
-}
 
-.footer-subscribe__input:hover {
-  border: 0.854167px solid #7eb101;
-}
-
-.footer-subscribe__input:invalid {
-  border: 0.854167px solid #ff705d;
+  &:invalid {
+    border: 0.854167px solid #ff705d;
+  }
+  &:valid {
+    border: 0.854167px solid #7eb101;
+  }
 }
 
 .footer-subscribe__btn {
