@@ -312,20 +312,32 @@ margin-bottom: 20px;
     
     color: $footerLinkColor;
 }
-
-.footer-specia__item:last-child{
-color: $primaryTextColor;
-
-@media screen and(max-width:479px) {
-    margin: auto;
+.special{
+        justify-content:center;
+        display: flex;
+        
+        
+@media screen and (min-width:$tablet) {
+    display: block;
+    text-align: right;
+    position: relative;
+    bottom: 15px;
+}
+       
 }
 
-font-weight: 400;
-font-size: 10px;
-line-height: calc(12/10);
+.footer-special__text{
+    font-weight: 400;
+    font-size: 10px;
+    line-height: calc(12/10);
+       margin: auto;
+color: $primaryTextColor;
+
 
     @media screen and (min-width:$tablet) {
-        margin-left: auto;
+      font-size: 12px;
+       line-height: calc(14/12);
+
     }
    
 }
