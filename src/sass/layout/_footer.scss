@@ -5,10 +5,15 @@
     margin-left: auto;
     margin-right: auto;
     background: #FEFEFE;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-size:  100% ;
     background-position: center;
-    box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
+    background-repeat: no-repeat;
+    //background-size: 104px 259px, 100px 116px, 253px 66px; 
+    //background-position: bottom 360px left 216px, top 111px right 210px, top 544px center;
+    
+/*
+   background-image: url(../images/footer/Group\ 63.png), url(../images/footer/Frame\ 21.png), url(../images/footer/Frame\ 22.png); */
+
 
     background-image: url(../images/footer/Group\ 66@1x-sm.png);
     @media (min-device-pixel-ratio: 2),
@@ -271,7 +276,7 @@ margin-bottom: 20px;
 }
 .footer-special__list{
         margin-bottom: 40px;
-        list-style: none;
+        align-items: baseline;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between; 
