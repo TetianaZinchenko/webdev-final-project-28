@@ -1,8 +1,13 @@
 $primaryTextColor: #2c2c2c;
+$mobileMenuColor: #000000;
 $primaryBgColor: #ffffff;
 $footerLinkColor: #7eb101;
 $btnBgColor: #bbf330;
+$btnBgAccentColor: #b5ff00;
+$btnAccentBorderColor: #597d00;
 $additionalColor: #ffe550;
+$headerBgColor: #fefefe;
+
 $modalBgColor: #d9d9d9;
 $modalOverlay: rgba(0, 0, 0, 0.2);
 
@@ -10,4 +15,8 @@ $timingFunction: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 $mobile: 480px;
 $tablet: 768px;
+$tablet-max: 1279px;
+
 $desktop: 1280px;
+
+$indent-one: 28px;
