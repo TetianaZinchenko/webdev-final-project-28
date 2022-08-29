@@ -34,12 +34,21 @@
                 class="footer-subscribe__input"
                 type="email"
                 name="email"
-                placeholder="Enter your email"
+                placeholder="Enter your email" id="footer-subscribe__label"
               />
+            </label>
+            <label class="footer-subscribe__label">
+                <svg class="footer-subscribe__icon" width="12" height="12">
+                    <use class="footer-subscribe__error" href="../src/images/icons.svg#Frame">
+                    </use>
+                </svg>
+                <span class="footer-subscribe__text-error">Not a valid email address (example@email.com)</span>
             </label>
             <button class="footer-subscribe__btn" type="submit">
               Subscribe
             </button>
+            
+            
           </div>
           <span class="footer-subscribe__agreement"
             >By subscribing you agree to with our
