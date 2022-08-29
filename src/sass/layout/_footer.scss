@@ -183,29 +183,28 @@
 
 .footer-subscribe__input:invalid {
   border: 0.854167px solid #ff705d;
+  opacity: 1;
 }
 
 .footer-subscribe__label {
-  position: fixed;
-  top: 51%;
-  left: 4%;
+  display: block;
+  position: absolute;
+margin-top: -20px;
+  
   opacity: 0;
 
   @media screen and (min-width:$tablet) {
-    top: 58%;
+  margin-top: 40px;
 
   }
 
   @media screen and (min-width:$desktop) {
-    top: 61%;
-    left: 68%;
+
   }
 
 }
-
-.footer-subscribe__input:invalid:not(:placeholder-shown)
- ~ .footer-subscribe__label{
-   opacity: 1;
+.footer-subscribe__input:invalid:not(:placeholder-shown) ~ .footer-subscribe__label{
+  opacity: 1;
 }
 
 .footer-subscribe__text-error {
