@@ -127,6 +127,7 @@
   color: $primaryTextColor;
   cursor: pointer;
   border: none;
+  margin-top: 20px;
 
   &:hover,
   &:focus {
@@ -147,11 +148,17 @@
 // }
 .subscribtion-formtitle {
   display: block;
-  margin-right: auto;
-  margin-top: 4px;
+  // margin-right: auto;
+  margin-top: 45px;
   align-items: center;
+  margin-right: 205px;
+  position: absolute;
+  // align-items: start;
 
   opacity: 0;
+  @media screen and (min-width: 768px) {
+    margin-top: 4px;
+  }
 }
 .subscribe__input:invalid:not(:placeholder-shown) ~ .subscribtion-formtitle {
   opacity: 1;
