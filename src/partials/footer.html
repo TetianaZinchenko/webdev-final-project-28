@@ -27,14 +27,14 @@
       </nav>
       <div class="footer-subscribe">
         <h3 class="footer-subscribe__title">Subscribe</h3>
-        <form class="footer-subscribe__form" name="footer-subscribe-form">
+        <form class="footer-subscribe__form" name="footer-subscribe-form" autocomplete="off" novalidate>
           <div class="footer-subscribe__group">
             <label class="footer-subscribe__email" for="email">
               <input
                 class="footer-subscribe__input"
                 type="email"
                 name="email"
-                placeholder="Enter your email" id="footer-subscribe__label"
+                placeholder="Enter your email"  pattern="^(.+)@(\ S+)$" id="footer-subscribe__label"
               />
             </label>
             <label class="footer-subscribe__label" for="footer-subscribe__label">
@@ -43,11 +43,10 @@
                     </use>
                 </svg>
                 <span class="footer-subscribe__text-error">Not a valid email address (example@email.com)</span>
-            </label>
-            <button class="footer-subscribe__btn" type="submit">
+              </label>
+             <button class="footer-subscribe__btn" type="submit">
               Subscribe
             </button>
-            
             
           </div>
           <span class="footer-subscribe__agreement"
