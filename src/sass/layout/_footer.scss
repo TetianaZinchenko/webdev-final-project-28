@@ -183,15 +183,14 @@
 
 .footer-subscribe__input:invalid {
   border: 0.854167px solid #ff705d;
-  opacity: 1;
+  
 }
 
 .footer-subscribe__label {
   display: block;
   position: absolute;
-margin-top: -20px;
-margin-left: 14px;
-  
+  margin-top: -20px;
+  margin-left: 14px;
   opacity: 0;
 
   @media screen and (min-width:$tablet) {
@@ -199,11 +198,8 @@ margin-left: 14px;
 
   }
 
-  @media screen and (min-width:$desktop) {
-
-  }
-
 }
+
 .footer-subscribe__input:invalid:not(:placeholder-shown) ~ .footer-subscribe__label{
   opacity: 1;
 }
