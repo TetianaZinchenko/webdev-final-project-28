@@ -3,14 +3,12 @@
   padding-bottom: 50px;
 
   @media screen and (min-width: $tablet) {
-    padding-bottom: 73px;
+    padding-bottom: 0;
   }
 
   @media screen and (min-width: $desktop) {
-    padding-top: 14px;
+    padding-top: 159px;
     padding-bottom: 14px;
-    // padding-top: 159px;
-    // padding-bottom: 14px;
   }
 }
 

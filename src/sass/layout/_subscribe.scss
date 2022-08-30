@@ -113,7 +113,7 @@
 
 .subscribe__text {
   font-family: 'Roboto';
-  font-style: normal;
+
   font-weight: 400;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -126,6 +126,8 @@
   }
 }
 .subscribe__form {
+  position: relative;
+
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -206,34 +208,69 @@
 //   flex-direction: row-reverse;
 //   justify-content: normal;
 // }
+// .subscribtion-formtitle {
+//   display: block;
+//   display: inline-block;
+//   margin-right: auto;
+//   margin-top: 45px;
+//   align-items: center;
+//   margin-right: 48px;
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   align-items: start;
+
+//   opacity: 0;
+//   @media screen and (min-width: 480px) {
+//     margin-right: 205px;
+//   }
+//   @media screen and (min-width: 768px) {
+//     margin-top: 4px;
+//   }
+// }
+// .subscribe__input:invalid:not(:placeholder-shown) ~ .subscribtion-formtitle {
+//   opacity: 1;
+// }
+// .subscribtion__text-eror {
+//   font-family: 'Roboto';
+//   font-style: normal;
+//   font-weight: 400;
+//   font-size: 10px;
+//   line-height: 150%;
+//   color: #ff705d;
+// }
+.subscribtion__icon {
+  // text-align: center;
+  // background-color: red;
+}
 .subscribtion-formtitle {
-  display: block;
-  // margin-right: auto;
-  margin-top: 45px;
-  align-items: center;
-  margin-right: 48px;
   position: absolute;
-  // align-items: start;
+
+  // top: 46px;
+  top: 0;
+  left: 0;
+
+  display: inline-flex;
 
   opacity: 0;
-  @media screen and (min-width: 480px) {
-    margin-right: 205px;
-  }
-  @media screen and (min-width: 768px) {
-    margin-top: 4px;
-  }
 }
-.subscribe__input:invalid:not(:placeholder-shown) ~ .subscribtion-formtitle {
+
+.subscribe__input:invalid:not(:placeholder-shown) ~ .error {
   opacity: 1;
 }
-.subscribtion__text-eror {
-  font-family: 'Roboto';
-  font-style: normal;
+
+.subscribtion__icon {
+  margin-right: 4px;
+
+  background-color: red;
+}
+
+.subscribtion__text-error {
   font-weight: 400;
   font-size: 10px;
   line-height: 150%;
   color: #ff705d;
-}
-.subscribtion__icon {
-  text-align: center;
+
+  @media screen and (min-width: 1280px) {
+  }
 }

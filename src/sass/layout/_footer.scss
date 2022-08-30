@@ -346,3 +346,37 @@
     font-size: 12px;
   }
 }
+
+.footer-formtitle {
+  display: block;
+  // margin-right: auto;
+  margin-top: 45px;
+  align-items: center;
+  margin-right: 48px;
+  position: absolute;
+  // align-items: start;
+
+  opacity: 0;
+  @media screen and (min-width: 480px) {
+    // margin-right: 205px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-top: 4px;
+  }
+}
+.footer-subscribe__input:invalid:not(:placeholder-shown) ~ .footer-formtitle {
+  opacity: 1;
+}
+.footer__text-eror {
+  font-family: 'Roboto';
+
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 150%;
+  color: #ff705d;
+}
+.footer__icon {
+  text-align: center;
+
+  background-color: red;
+}
