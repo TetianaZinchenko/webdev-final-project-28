@@ -120,11 +120,10 @@
     color: $btnBgColor;
     text-decoration-line: underline;
   }
-}
 
-.footer-subscribe {
-  @media screen and (min-width: 768px) {
-  }
+  display: inline-block;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .footer-subscribe__title {
@@ -223,6 +222,10 @@
 .agreement-link {
   @extend %link;
 
+  display: inline-block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
   text-decoration-line: underline;
   color: $footerLinkColor;
 }
@@ -254,7 +257,9 @@
 .footer-category__link {
   @extend %link;
 
-  margin-bottom: 40px;
+  display: inline-block;
+  padding-top: 20px;
+  padding-bottom: 20px;
 
   font-weight: 400;
   font-size: 10px;
