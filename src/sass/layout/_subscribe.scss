@@ -125,10 +125,11 @@
     max-width: 656px;
   }
 }
-.subscribe__form-group {
+.subscribe__form {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+
   @media screen and (min-width: 768px) {
     flex-direction: row;
     display: inline;
@@ -174,8 +175,8 @@
   height: 42px;
   background-color: #bbf330;
   border-radius: 30px;
-  font-family: 'Roboto';
-  font-style: normal;
+  font-family: inherit;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
