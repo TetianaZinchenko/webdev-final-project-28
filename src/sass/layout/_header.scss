@@ -7,24 +7,11 @@
   box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
 
   height: 72px;
-
-  // position: fixed;
-  // width: 100%;
-  // top: 0;
-  // left: 0;
-
-  // z-index: 1000;
 }
 
 .header__logo {
   width: 66px;
   height: 52px;
-
-  // padding-top: 10px;
-  // padding-bottom: 10px;
-
-  // display: flex;
-  // align-items: center;
 }
 
 .header-nav {
@@ -40,19 +27,9 @@
 .nav {
   display: flex;
   align-items: center;
-  // gap: 28px;
+
   align-items: center;
   margin-right: 30px;
-
-  // @media screen and (max-width: calc($tablet - 1px)) {
-  //   display: none;
-  // }
-
-  // @media screen and (min-width: $tablet) {
-  //   display: flex;
-
-  //   align-items: baseline;
-  // }
 }
 
 .nav__list {
@@ -63,7 +40,6 @@
   gap: $indent-one;
 
   display: flex;
-  // justify-content: flex-end;
 }
 
 .nav__link {
@@ -97,9 +73,6 @@
   @extend %button;
 
   display: block;
-
-  // margin: 5px 17px 6px 16px;
-  // margin-left: 16px;
 
   font-weight: 500;
   font-size: 13px;
