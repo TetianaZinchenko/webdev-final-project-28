@@ -45,7 +45,7 @@
 .nav__link {
   @extend %link;
 
-  display: block;
+  display: inline-block;
 
   padding-top: 28px;
   padding-bottom: 28px;

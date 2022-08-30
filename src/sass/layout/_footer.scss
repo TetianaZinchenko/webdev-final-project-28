@@ -9,7 +9,7 @@
 
   @media screen and (min-width: 320px) {
     background-size: 104px, 253px, 110px;
-    background-position: top 0px right, top 575px center, top 132px left;
+    background-position: top 0px right, bottom, top 132px left;
     background-image: url(../images/footer/x/right@1x_sm.png),
       url(../images/footer/x/central@1x_sm.png),
       url(../images/footer/x/left@1x_sm.png);
@@ -25,9 +25,10 @@
 
   @media screen and (min-width: 768px) {
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 80px;
     background-size: 203px, 785px;
-    background-position: top 0px right, top 0px center;
+    // background-position: top 0px right, top 0px center;
+    background-position: top 0px right, bottom;
     background-image: url(../images/footer/x/right@1x_md.png),
       url(../images/footer/x/central@1x_md.png);
 
@@ -65,7 +66,11 @@
   display: flex;
   flex-direction: row;
 
-  margin-bottom: 40px;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 40px;
+  }
 }
 
 .footer__logo {
@@ -87,7 +92,7 @@
 
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  // gap: 20px;
 
   @media screen and (min-width: 768px) {
     flex-direction: row;
@@ -120,10 +125,14 @@
     color: $btnBgColor;
     text-decoration-line: underline;
   }
-}
 
-.footer-subscribe {
+  display: inline-block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
   @media screen and (min-width: 768px) {
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 }
 
@@ -178,7 +187,7 @@
   display: flex;
   text-align: center;
   margin-left: auto;
-  margin-bottom: 20px;
+  // margin-bottom: 20px;
   padding: 10px 22px;
   font-weight: 500;
   font-size: 13px;
@@ -203,7 +212,8 @@
 
 .footer-subscribe__agreement {
   display: inline-block;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
+  // margin-bottom: 60px;
   font-weight: 400;
   font-size: 10px;
   line-height: calc(12 / 10);
@@ -222,6 +232,10 @@
 
 .agreement-link {
   @extend %link;
+
+  display: inline-block;
+  padding-top: 20px;
+  padding-bottom: 20px;
 
   text-decoration-line: underline;
   color: $footerLinkColor;
@@ -243,7 +257,8 @@
   align-items: center;
   justify-content: center;
   gap: 33px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+  // margin-bottom: 40px;
 
   @media screen and (min-width: 768px) {
     margin-bottom: 0px;
@@ -254,7 +269,9 @@
 .footer-category__link {
   @extend %link;
 
-  margin-bottom: 40px;
+  display: inline-block;
+  padding-top: 20px;
+  padding-bottom: 20px;
 
   font-weight: 400;
   font-size: 10px;
