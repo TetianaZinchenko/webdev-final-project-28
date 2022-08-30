@@ -1,32 +1,30 @@
-<div class="container header__container page-header">
-  <div class="header-logo">
-    <a class="header__logo" href="./index.html">
-      <svg class="" width="66" height="52" aria-label="Logo">
-        <use class="" href="./images/icons.svg#logo"></use>
-      </svg>
-    </a>
-  </div>
-  <div class="mobile-menu__button-container">
-    <button
-      type="button"
-      class="mobile-menu__button"
-      aria-expanded="false"
-      aria-controls="mobile-menu"
-      data-menu-button
+<div class="container header__container">
+  <a class="header__logo" href="./index.html">
+    <svg class="" width="66" height="52" aria-label="Logo">
+      <use class="" href="./images/icons.svg#logo"></use>
+    </svg>
+  </a>
+
+  <button
+    type="button"
+    class="mobile-menu__button"
+    aria-expanded="false"
+    aria-controls="mobile-menu"
+    data-menu-button
+  >
+    <svg
+      class="mobile-menu__icon"
+      width="28"
+      height="28"
+      aria-label="Переключатель мобильного меню"
     >
-      <svg
-        class="mobile-menu__icon"
-        width="28"
-        height="28"
-        aria-label="Переключатель мобильного меню"
-      >
-        <use
-          class="mobile-menu__icon--menu"
-          href="./images/icons.svg#gg_menu"
-        ></use>
-      </svg>
-    </button>
-  </div>
+      <use
+        class="mobile-menu__icon--menu"
+        href="./images/icons.svg#gg_menu"
+      ></use>
+    </svg>
+  </button>
+
   <div class="mobile-menu" id="mobile-menu" data-menu>
     <ul class="mobile-menu-nav">
       <li class="mobile-menu-nav__item">
@@ -46,6 +44,7 @@
       </li>
     </ul>
   </div>
+
   <div class="header-nav">
     <nav class="nav">
       <ul class="nav__list">
@@ -65,10 +64,8 @@
           <a class="nav__link" href="">Contact</a>
         </li>
       </ul>
-      <button class="nav__button" type="button" data-modal-open>
-        Order Now
-      </button>
     </nav>
+    <button class="nav__button" type="button" data-modal-open>Order Now</button>
   </div>
 </div>
 
