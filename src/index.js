@@ -13,11 +13,11 @@
   });
 })();
 
-const { height: pageHeaderHeight } = document
-  .querySelector('.page-header')
-  .getBoundingClientRect();
+// const { height: pageHeaderHeight } = document
+//   .querySelector('.page-header')
+//   .getBoundingClientRect();
 
-document.body.style.paddingTop = `${pageHeaderHeight}px`;
+// document.body.style.paddingTop = `${pageHeaderHeight}px`;
 
 (() => {
   const refs = {

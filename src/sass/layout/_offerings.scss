@@ -1,50 +1,30 @@
 .offerings {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url(../images/offerings/Rectangle-sm@1x.png);
-
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: linear-gradient(
-        0deg,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../images/offerings/Rectangle-sm@2x.png);
-  }
+  padding-top: 41px;
+  padding-bottom: 60px;
 
   @media screen and (min-width: $tablet) {
-    margin-top: -108px;
-
-    background-image: url(../images/offerings/Rectangle-md@1x.png);
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: linear-gradient(
-          0deg,
-          rgba(47, 48, 58, 0.4),
-          rgba(47, 48, 58, 0.4)
-        ),
-        url(../images/offerings/Rectangle-md@2x.png);
-    }
+    padding-top: 150px;
+    padding-bottom: 100px;
+    margin-top: -100px;
   }
 
   @media screen and (min-width: $desktop) {
-    margin-top: -161px;
+    margin-top: -155px;
+    padding-top: 200px;
+    padding-bottom: 43px;
+  }
 
-    background-image: url(../images/offerings/Rectangle-lg@1x.png);
+  background-size: 100% 100%;
+  background-position: center;
 
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: linear-gradient(
-          0deg,
-          rgba(47, 48, 58, 0.4),
-          rgba(47, 48, 58, 0.4)
-        ),
-        url(../images/offerings/Rectangle-lg@2x.png);
-    }
+  background-image: url(../images/offerings/background/sm-1.svg);
+
+  @media screen and (min-width: $tablet) {
+    background-image: url(../images/offerings/background/md-1.svg);
+  }
+
+  @media screen and (min-width: $desktop) {
+    background-image: url(../images/offerings/background/lg-1.svg);
   }
 
   &--apple-tablet {
@@ -57,36 +37,22 @@
 }
 
 .offerings__container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  padding-top: 41px;
-
-  @media screen and (min-width: $tablet) {
-    padding-top: 150px;
-  }
-
   @media screen and (min-width: $desktop) {
-    padding-top: 177px;
-    flex-direction: row;
+    display: flex;
+    align-items: center;
   }
 }
 
 .offerings__apples {
-  margin-bottom: 60px;
-
   @media screen and (min-width: $tablet) {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: baseline;
-    margin-bottom: 60px;
   }
 
   @media screen and (min-width: $desktop) {
     margin-right: 90px;
-    margin-bottom: 43px;
   }
 }
 
@@ -98,25 +64,30 @@
 }
 
 .offerings__list {
-  margin-bottom: 28px;
-
   @media screen and (min-width: $tablet) {
     margin-bottom: 40px;
-  }
-
-  @media screen and (min-width: $desktop) {
-    margin-bottom: 32px;
-  }
-}
-
-.offerings__list--part {
-  @media screen and (min-width: $tablet) {
     display: flex;
     gap: 116px;
   }
 
   @media screen and (min-width: $desktop) {
+    margin-bottom: 32px;
     gap: 67px;
+  }
+}
+
+.offerings__content {
+  display: flexbox;
+  gap: 28px;
+}
+
+.offerings__main {
+  margin-top: 28px;
+  margin-bottom: 28px;
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 0;
+    margin-bottom: 40px;
   }
 }
 
@@ -127,6 +98,7 @@
 
   color: $primaryTextColor;
 
+  display: block;
   margin-bottom: 20px;
 
   @media screen and (min-width: $tablet) {
@@ -151,15 +123,13 @@
 }
 
 .offerings__text {
-  margin-bottom: 28px;
-  margin-right: 8px;
+  display: inline-block;
+  max-width: 272px;
 
   @media screen and (min-width: $tablet) {
     font-size: 16px;
     line-height: calc(19 / 16);
-    margin-bottom: 40px;
 
-    display: inline-block;
     max-width: 526px;
   }
   @media screen and (min-width: $desktop) {
@@ -168,11 +138,10 @@
 }
 
 .offerings__text-part {
-  margin-right: 28px;
+  max-width: 252px;
 
   @media screen and (min-width: $tablet) {
     display: inline-block;
-    max-width: 252px;
   }
 }
 
@@ -197,12 +166,17 @@
 }
 
 .offerings__item {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  flex-wrap: nowrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 
   margin-bottom: 28px;
+
+  @media screen and (min-width: $tablet) {
+    align-items: baseline;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
 
   @media screen and (min-width: $tablet) {
     margin-bottom: 0px;
@@ -229,45 +203,34 @@
   }
 }
 
-.offerings__item--part {
-  @media screen and (min-width: $tablet) {
-    display: block;
-  }
-}
+.part-one::before,
+.part-two::before {
+  content: '';
 
-.offerings__icon {
-  @extend %link;
+  display: block;
 
-  cursor: pointer;
+  position: relative;
+  top: 0;
+  left: 0;
+  margin-bottom: 8px;
 
   height: 48px;
   width: 48px;
 
-  margin: 0;
-  padding: 0;
-
-  margin-bottom: 8px;
-
-  display: flex;
-
-  align-items: center;
-  justify-content: center;
+  background-repeat: no-repeat;
+  background-position: center;
 
   border-radius: 50%;
 
   background-color: $primaryBgColor;
 }
 
-.offerings__call-container {
-  margin-bottom: 60px;
+.part-one::before {
+  background-image: url(../images/rocket.svg);
+}
 
-  @media screen and (min-width: $tablet) {
-    margin-bottom: 100px;
-  }
-
-  @media screen and (min-width: $desktop) {
-    margin-bottom: 0px;
-  }
+.part-two::before {
+  background-image: url(../images/touch-app.svg);
 }
 
 .offerings__button {

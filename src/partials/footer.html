@@ -1,68 +1,67 @@
 <div class="container footer">
-  <section class="footer__section">
-    <div class="footer__container">
-      <nav class="footer-nav">
-        <a class="footer__logo" href="/">
-          <svg class="logo-icon" aria-label="Logo" width="69" height="51">
-            <use href="./images/icons.svg#icon-logo-new"></use>
-          </svg>
-        </a>
-        <ul class="footer-nav__list">
-          <li class="footer-nav__item">
-            <a class="footer-nav__link" href="./index.html">Home</a>
-          </li>
-          <li class="footer-nav__item">
-            <a class="footer-nav__link" href="">About</a>
-          </li>
-          <li class="footer-nav__item">
-            <a class="footer-nav__link" href="">Service</a>
-          </li>
-          <li class="footer-nav__item">
-            <a class="footer-nav__link" href="">Menu</a>
-          </li>
-          <li class="footer-nav__item">
-            <a class="footer-nav__link" href="">Contact</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="footer-subscribe">
-        <h3 class="footer-subscribe__title">Subscribe</h3>
-        <form class="footer-subscribe__form" name="footer-subscribe-form">
-          <div class="footer-subscribe__group">
-            <label class="footer-subscribe__email" for="email">
-              <input
-                class="footer-subscribe__input"
-                type="email"
-                name="email"
-                placeholder="Enter your email"
-              />
-            </label>
-            <button class="footer-subscribe__btn" type="submit">
-              Subscribe
-            </button>
-          </div>
-          <span class="footer-subscribe__agreement"
-            >By subscribing you agree to with our
-            <a class="agreement-link" href="">Privacy Policy</a>
-          </span>
-        </form>
-      </div>
-    </div>
-    <div class="footer-category">
-      <ul class="footer-category__list">
-        <li class="footer-category__item">
-          <a class="footer-category__link" href="">Privacy Policy</a>
+  <div class="footer__main">
+    <div class="footer-nav">
+      <a class="footer__logo" href="/">
+        <img src="./images/logo.svg" alt="Logo" width="69" height="51" />
+      </a>
+      <ul class="footer-nav__list">
+        <li class="footer-nav__item">
+          <a class="footer-nav__link" href="./index.html">Home</a>
         </li>
-        <li class="footer-category__item">
-          <a class="footer-category__link" href="">Terms of Service</a>
+        <li class="footer-nav__item">
+          <a class="footer-nav__link" href="">About</a>
         </li>
-        <li class="footer-category__item">
-          <a class="footer-category__link" href="">Cookies Settings</a>
+        <li class="footer-nav__item">
+          <a class="footer-nav__link" href="">Service</a>
+        </li>
+        <li class="footer-nav__item">
+          <a class="footer-nav__link" href="">Menu</a>
+        </li>
+        <li class="footer-nav__item">
+          <a class="footer-nav__link" href="">Contact</a>
         </li>
       </ul>
-      <div class="footer-copyright">
-        <p class="footer-copyright__item">2022 FoodSta. All right reserved.</p>
-      </div>
     </div>
-  </section>
+    <div class="footer-subscribe">
+      <b class="footer-subscribe__title">Subscribe</b>
+      <form class="footer-subscribe__form" name="footer-subscribe-form">
+        <input
+          class="footer-subscribe__input"
+          type="email"
+          name="email"
+          placeholder="Enter your email"
+        />
+        <button class="footer-subscribe__btn" type="submit">Subscribe</button>
+        <div class="footer-formtitle">
+          <svg class="footer__icon" width="12" height="12">
+            <use
+              class="footer__eror"
+              href="./images/icons.svg#icon-Frameerror"
+            ></use>
+          </svg>
+          <span class="footer__text-eror"
+            >Not a valid email address (example@email.com)</span
+          >
+        </div>
+      </form>
+      <p class="footer-subscribe__agreement">
+        By subscribing you agree to with our
+        <a class="agreement-link" href="">Privacy Policy</a>
+      </p>
+    </div>
+  </div>
+  <div class="footer-category">
+    <ul class="footer-category__list">
+      <li class="footer-category__item">
+        <a class="footer-category__link" href="">Privacy Policy</a>
+      </li>
+      <li class="footer-category__item">
+        <a class="footer-category__link" href="">Terms of Service</a>
+      </li>
+      <li class="footer-category__item">
+        <a class="footer-category__link" href="">Cookies Settings</a>
+      </li>
+    </ul>
+    <p class="footer-copyright">2022 FoodSta. All right reserved.</p>
+  </div>
 </div>
