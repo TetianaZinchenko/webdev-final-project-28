@@ -1,40 +1,55 @@
 .customers {
-  padding-left: 20px;
-  padding-right: 20px;
+  // padding-left: 20px;
+  // padding-right: 20px;
   padding-top: 60px;
   padding-bottom: 60px;
 
   //   height: 770px;
-  background-image: url(../images/customers-say/customers-backround-sm@1x.png);
+  // background-image: url(../images/customers-say/customers-backround-sm@1x.png);
+
+  background-image: url(../images/customers-say/background/sm-2.svg);
+
   // background-size: 100%  770px;
-  background-size: cover;
-  background-repeat: no-repeat;
+  // background-size: cover;
+  background-size: 100% 100%;
+  // background-repeat: no-repeat;
   background-position: center;
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url(../images/customers-say/customers-backround-sm@2x.png);
-  }
+
+  // @media (min-device-pixel-ratio: 2),
+  //   (min-resolution: 192dpi),
+  //   (min-resolution: 2dppx) {
+  //   background-image: url(../images/customers-say/customers-backround-sm@2x.png);
+  // }
+
   @media screen and (min-width: 768px) {
+    padding-bottom: 120px;
     // height: 545px;
-    background-image: url(../images/customers-say/customers-backround-md@1x.png);
+    // background-image: url(../images/customers-say/customers-backround-md@1x.png);
+
+    background-image: url(../images/customers-say/background/md-2.svg);
+
     // background-size: 100% 545px;
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/customers-say/customers-backround-md@2x.png);
-    }
+    // @media (min-device-pixel-ratio: 2),
+    //   (min-resolution: 192dpi),
+    //   (min-resolution: 2dppx) {
+    //   background-image: url(../images/customers-say/customers-backround-md@2x.png);
+    // }
   }
+
   @media screen and (min-width: 1280px) {
     // height: 648px;
-    background-image: url(../images/customers-say/customers-background-lg@1x.png);
+    // background-image: url(../images/customers-say/customers-background-lg@1x.png);
+
+    background-image: url(../images/customers-say/background/lg-2.svg);
+
+    padding-bottom: 200px;
     // background-size: 100% 648px;
 
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/customers-say/customers-background-lg@2x.png);
-    }
+    // @media (min-device-pixel-ratio: 2),
+    //   (min-resolution: 192dpi),
+    //   (min-resolution: 2dppx) {
+    //   background-image: url(../images/customers-say/customers-background-lg@2x.png);
+    // }
   }
 }
 
@@ -43,21 +58,21 @@
   // padding-right: 20px;
   // padding-top: 60px;
   // padding-bottom: 60px;
-  margin-left: auto;
-  margin-right: auto;
+  // margin-left: auto;
+  // margin-right: auto;
 
   @media screen and (min-width: 480px) {
-    width: 480px;
+    // width: 480px;
   }
 
   @media screen and (min-width: 768px) {
-    width: 768px;
-    padding: 60px 20px 120px;
+    // width: 768px;
+    // padding: 60px 20px 120px;
   }
 
   @media screen and (min-width: 1280px) {
-    width: 1280px;
-    padding: 100px 123px 200px 16px;
+    // width: 1280px;
+    // padding: 100px 123px 200px 16px;
   }
 }
 
@@ -67,6 +82,8 @@
   line-height: 1.18;
 
   color: #2c2c2c;
+
+  // display: block;
   margin-bottom: 20px;
   @media screen and (min-width: 768px) {
     font-weight: 700;
@@ -90,6 +107,8 @@
   }
 }
 .customers__list {
+  @extend %list;
+
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -118,6 +137,7 @@
 .customers-cards__icons {
   margin-bottom: 28px;
 }
+
 .customers-card__text {
   font-family: 'Roboto';
   font-style: normal;
@@ -139,11 +159,14 @@
 }
 .customers__user {
   display: flex;
+  align-items: center;
+  // justify-content: center;
+
   gap: 16px;
 
   width: 160px;
   border-right: 1px solid #7eb101;
-  margin-bottom: 8px;
+  // margin-bottom: 8px;
   @media screen and (min-width: 768px) {
     margin-bottom: 12px;
   }
@@ -151,6 +174,11 @@
     margin-bottom: 14px;
   }
 }
+
+.customers__img {
+  @extend %img;
+}
+
 .user__name {
   font-family: 'Roboto';
   font-style: normal;
@@ -158,6 +186,8 @@
   font-size: 14px;
   line-height: 1.5;
   color: #2c2c2c;
+
+  display: block;
   margin-bottom: 2px;
 }
 
