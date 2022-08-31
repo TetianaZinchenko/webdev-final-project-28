@@ -44,6 +44,8 @@
 }
 
 .offerings__apples {
+  text-align: center;
+
   @media screen and (min-width: $tablet) {
     display: flex;
     flex-wrap: nowrap;
