@@ -5,6 +5,7 @@
   background-image: url(../images/customers-say/background/sm-2.svg);
 
   background-size: 100% 100%;
+  // background-size: cover;
 
   background-position: center;
 
@@ -16,6 +17,7 @@
 
   @media screen and (min-width: 1280px) {
     background-image: url(../images/customers-say/background/lg-2.svg);
+    // background-size: 100%;
 
     padding-bottom: 200px;
   }
