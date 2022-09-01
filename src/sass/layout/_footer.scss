@@ -109,7 +109,7 @@
   line-height: 16px;
   color: $mobileMenuColor;
 
-  transition: color 250ms $timingFunction;
+  transition: color $timingFunction text-decoration-line $timingFunction;
 
   @media screen and (min-width: 768px) {
     padding-top: 20px;
