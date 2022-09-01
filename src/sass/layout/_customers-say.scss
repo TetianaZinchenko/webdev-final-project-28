@@ -1,35 +1,33 @@
-.customers {
-  padding-top: 60px;
-  padding-bottom: 60px;
+.background-customers {
+  max-width: 1920px;
 
   background-image: url(../images/customers-say/background/customers-320.svg);
 
   background-size: 100% 100%;
   background-repeat: no-repeat;
 
-  // background-position: center;
-
   @media screen and (min-width: 480px) {
     background-image: url(../images/customers-say/background/sm-2.svg);
-    // max-width: 100%;
-    // background-repeat: no-repeat;
   }
 
   @media screen and (min-width: 768px) {
-    // max-width: 100%;
-    // background-repeat: no-repeat;
-
-    padding-bottom: 120px;
-
     background-image: url(../images/customers-say/background/md-2.svg);
   }
 
   @media screen and (min-width: 1280px) {
     background-image: url(../images/customers-say/background/lg-2.svg);
+  }
+}
 
-    // max-width: 1920px;
-    // background-repeat: no-repeat;
+.customers {
+  padding-top: 60px;
+  padding-bottom: 60px;
 
+  @media screen and (min-width: 768px) {
+    padding-bottom: 120px;
+  }
+
+  @media screen and (min-width: 1280px) {
     padding-bottom: 200px;
   }
 }
