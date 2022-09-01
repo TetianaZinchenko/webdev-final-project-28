@@ -15,19 +15,32 @@
   }
 
   background-size: 100% 100%;
-  // background-size: cover;
 
-  background-position: center;
+  background-repeat: no-repeat;
 
-  background-image: url(../images/offerings/background/sm-1.svg);
+  // background-position: center;
+
+  background-image: url(../images/offerings/background/offering-320.svg);
+
+  @media screen and (min-width: 480px) {
+    max-width: 100%;
+    background-repeat: no-repeat;
+
+    background-image: url(../images/offerings/background/sm-1.svg);
+  }
 
   @media screen and (min-width: $tablet) {
+    max-width: 100%;
+    background-repeat: no-repeat;
+
     background-image: url(../images/offerings/background/md-1.svg);
   }
 
   @media screen and (min-width: $desktop) {
+    max-width: 1920px;
+    background-repeat: no-repeat;
+
     background-image: url(../images/offerings/background/lg-1.svg);
-    // background-size: 100%;
   }
 
   &--apple-tablet {
