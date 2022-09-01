@@ -1,4 +1,29 @@
+.background-offerings {
+  max-width: 1920px;
+
+  background-size: 100% 100%;
+
+  background-repeat: no-repeat;
+
+  background-image: url(../images/offerings/background/offering-320.svg);
+
+  @media screen and (min-width: 480px) {
+    background-image: url(../images/offerings/background/sm-1.svg);
+  }
+
+  @media screen and (min-width: $tablet) {
+    background-image: url(../images/offerings/background/md-1.svg);
+  }
+
+  @media screen and (min-width: $desktop) {
+    background-image: url(../images/offerings/background/lg-1.svg);
+  }
+}
+
 .offerings {
+  padding-left: 0;
+  padding-right: 0;
+
   padding-top: 41px;
   padding-bottom: 60px;
 
@@ -12,36 +37,6 @@
     margin-top: -155px;
     padding-top: 200px;
     padding-bottom: 43px;
-  }
-
-  background-size: 100% 100%;
-  // background-size: 1920px;
-
-  background-repeat: no-repeat;
-
-  background-image: url(../images/offerings/background/offering-320.svg);
-
-  @media screen and (min-width: 480px) {
-    // max-width: 100%;
-    // max-width: 1920px;
-    // background-repeat: no-repeat;
-
-    background-image: url(../images/offerings/background/sm-1.svg);
-  }
-
-  @media screen and (min-width: $tablet) {
-    // max-width: 100%;
-    // max-width: 1920px;
-    // background-repeat: no-repeat;
-
-    background-image: url(../images/offerings/background/md-1.svg);
-  }
-
-  @media screen and (min-width: $desktop) {
-    // max-width: 1920px;
-    // background-repeat: no-repeat;
-
-    background-image: url(../images/offerings/background/lg-1.svg);
   }
 
   &--apple-tablet {
