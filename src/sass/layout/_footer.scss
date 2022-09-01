@@ -7,9 +7,6 @@
   background-repeat: no-repeat;
 
   @media screen and (min-width: 320px) {
-    // background-position: 100% 0, bottom, 0 132px;
-
-    // background-size: 104px 259px, 253px 66px, 110px 116px;
     background-size: 104px, 253px, 110px;
 
     background-position: top 0px right, top 563px center, top 132px left;
@@ -30,11 +27,8 @@
     padding-top: 100px;
     padding-bottom: 100px;
 
-    // background-position: 100% 0, bottom;
-    // background-size: 203px 365px, 785px 141px;
-
     background-size: 203px, 785px;
-    // background-position: top 0px right, top -12px center;
+
     background-position: top 0px right, bottom;
     background-image: url(../images/footer/x/right@1x_md.png),
       url(../images/footer/x/central@1x_md.png);
