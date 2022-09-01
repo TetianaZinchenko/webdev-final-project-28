@@ -42,11 +42,13 @@
   }
 
   @media screen and (min-width: 1280px) {
-    background-size: 100%;
-    background-position-y: bottom;
+    // background-size: 100%;
+    background-size: 1280px;
+
+    // background-position-y: bottom;
 
     // background-size: 1211px;
-    // background-position: bottom;
+    background-position: bottom;
     background-image: url(../images/footer/x/central@1x_lg.png);
 
     @media (min-device-pixel-ratio: 2),
